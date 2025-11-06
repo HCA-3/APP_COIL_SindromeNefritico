@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/varden"
+    android:fillViewport="true"
+    tools:context=".DiagnosisInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Título Principal -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diagnosis_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_marble"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Introducción -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/crimson_blaze">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/what_is_gn"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/introduction_text"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginBottom="16dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Epidemiología -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/crimson_blaze">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/epidemiology_title"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/epidemiology_text"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="470,000 casos nuevos cada año en el mundo"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="8dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Factores de Riesgo -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/crimson_blaze">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/risk_factors_title"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age_risk"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/living_conditions"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/genetic_factors"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other_diseases"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender_risk"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                    android:drawablePadding="8dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Causas -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/crimson_blaze">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/causes_title"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/immune_reaction"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Lista de gérmenes -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VIRUS:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/viruses"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BACTERIAS:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bacteria"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HONGOS:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fungi"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PARÁSITOS:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parasites"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="12dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Síntomas -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/crimson_blaze">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/symptoms_title"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/symptoms_timeline"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bloody_urine"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/swelling"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/high_bp"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/less_urine"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/headache"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fatigue"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/breathing"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/heart_problems"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other_symptoms"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Mecanismo del Daño -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/crimson_blaze">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/damage_mechanism_title"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/c3_complex"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/c3_low"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/immune_complexes"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/direct_attack"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/protein_loss"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <!-- Botón de información sobre proteinuria -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_info"
+                        android:contentDescription="Info"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/proteinuriaInfoButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/learn_more_about_proteinuria"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cell_damage"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Diagnóstico -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/crimson_blaze">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diagnosis_process_title"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clinical_history"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blood_protein"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/antibodies"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kidney_function"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complement"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/allergy"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tratamiento -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/crimson_blaze">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/treatment_title"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/treatment_goal"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rest"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salt_fluid"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bp_meds"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diuretics"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/antibiotics"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/allergy_alt"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Prevención -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/crimson_blaze">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prevention_title"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/infection_control"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/throat_culture"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skin_treatment"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/follow_up"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="8dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botón volver -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:text="Volver"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/gochujang_red" />
+
+    </LinearLayout>
+
+</ScrollView>

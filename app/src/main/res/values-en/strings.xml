@@ -1,0 +1,197 @@
+<resources>
+    <string name="app_name">EstaSiNefro</string>
+
+    <!-- Language Selection Screen -->
+    <string name="select_language">Select Language</string>
+    <string name="welcome">Welcome</string>
+    <string name="choose_language">Please select your preferred language</string>
+    <string name="continue_button">Continue</string>
+
+    <!-- Languages -->
+    <string name="spanish">Español</string>
+    <string name="english">English</string>
+
+    <!-- User Profile Screen -->
+    <string name="user_profile_title">Complete Your Profile</string>
+    <string name="user_profile_subtitle">Tell us a little about yourself</string>
+    <string name="name_label">Name</string>
+    <string name="name_hint">Enter your full name</string>
+    <string name="age_label">Age</string>
+    <string name="age_hint">Enter your age</string>
+    <string name="save_button">Save</string>
+    <string name="name_required">Name is required</string>
+    <string name="age_required">Age is required</string>
+    <string name="invalid_age">Please enter a valid age</string>
+    <string name="min_age">You must be at least 1 year old</string>
+    <string name="max_age">Maximum age allowed is 120 years</string>
+
+    <!-- Profile Summary Screen -->
+    <string name="profile_summary_title">Your Profile</string>
+    <string name="profile_complete_title">Profile Completed!</string>
+    <string name="profile_subtitle">Here is your information</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="name_info">Name</string>
+    <string name="age_info">Age</string>
+    <string name="language_info">Language</string>
+    <string name="years_old">years old</string>
+    <string name="continue_to_app">Continue to App</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="profile_created_date">Profile created: %s</string>
+    <string name="view_profile">View Profile</string>
+
+    <!-- Medical Content -->
+    <string name="medical_info_title">Medical Information</string>
+    <string name="nephrotic_syndrome">Nephrotic Syndrome</string>
+    <string name="postinfectious_gn">Post-infectious Glomerulonephritis</string>
+    <string name="habits_tracking">Habits Tracking</string>
+    <string name="medical_survey">Medical Survey</string>
+    <string name="learn_more">Learn More</string>
+    <string name="start_tracking">Start Tracking</string>
+    <string name="take_survey">Take Survey</string>
+
+    <!-- Medical Disclaimer -->
+    <string name="medical_disclaimer">Important Medical Disclaimer</string>
+    <string name="disclaimer_text">This application provides educational information and tracking tools. However, survey results do not replace a professional medical diagnosis. Always consult a doctor for an accurate diagnosis and proper medical examinations.</string>
+    <string name="i_understand">I Understand</string>
+
+    <!-- Medical Information -->
+    <string name="ns_title">What is Nephrotic Syndrome?</string>
+    <string name="ns_description">Nephrotic syndrome is a set of signs and symptoms indicating inflammation of the kidney filters (glomeruli), causing excessive protein loss in urine and swelling in various parts of the body.</string>
+    <string name="ns_symptoms">Main Symptoms:</string>
+    <string name="ns_symptom1">• Dark, reddish or bloody urine (macroscopic hematuria)</string>
+    <string name="ns_symptom2">• Mild swelling (edema) in face, eyelids, and ankles</string>
+    <string name="ns_symptom3">• High blood pressure (hypertension)</string>
+    <string name="ns_symptom4">• Decreased urine volume (oliguria)</string>
+    <string name="ns_symptom5">• Fatigue and generalized weakness</string>
+    <string name="ns_symptom6">• Lower back or flank pain</string>
+    <string name="ns_symptom7">• Nausea and loss of appetite</string>
+    <string name="ns_symptom8">• Headache due to hypertension</string>
+
+    <!-- Postinfectious GN -->
+    <string name="pgn_title">Post-infectious Glomerulonephritis</string>
+    <string name="pgn_description">Post-infectious glomerulonephritis is a kidney disease that occurs after an infection, commonly streptococcal pharyngitis or impetigo. The immune system mistakenly attacks the kidney glomeruli.</string>
+    <string name="pgn_timeline">Typical Timeline:</string>
+    <string name="pgn_timeline1">• Initial infection (1-3 weeks before)</string>
+    <string name="pgn_timeline2">• Latency period without symptoms</string>
+    <string name="pgn_timeline3">• Sudden onset of kidney symptoms</string>
+
+    <!-- Habits Tracking -->
+    <string name="habits_title">Healthy Habits Tracking</string>
+    <string name="water_intake">Water Intake</string>
+    <string name="salt_intake">Salt Intake</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="weight">Body Weight</string>
+    <string name="urination_frequency">Urination Frequency</string>
+    <string name="swelling_level">Swelling Level</string>
+    <string name="save_record">Save Record</string>
+    <string name="view_history">View History</string>
+
+    <!-- Survey -->
+    <string name="survey_title">Symptom Assessment</string>
+    <string name="survey_intro">Please answer the following questions sincerely to assess possible symptoms related to kidney problems.</string>
+    <string name="question1">Have you noticed blood or dark coloration in your urine recently?</string>
+    <string name="question2">Do you experience swelling in face, hands, legs, or feet?</string>
+    <string name="question3">Have you had high blood pressure?</string>
+    <string name="question4">Have you decreased the amount of urine you produce?</string>
+    <string name="question5">Have you had any infection (throat, skin) in the last few weeks?</string>
+    <string name="question6">Do you feel more tired than usual?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="sometimes">Sometimes</string>
+    <string name="survey_results">Assessment Results</string>
+    <string name="high_risk">High Risk</string>
+    <string name="moderate_risk">Moderate Risk</string>
+    <string name="low_risk">Low Risk</string>
+    <string name="recommendation_doctor">Recommendation: Consult a doctor immediately for a complete evaluation.</string>
+    <string name="recommendation_monitor">Recommendation: Monitor your symptoms and consult a doctor if they persist.</string>
+    <string name="recommendation_healthy">Recommendation: Maintain healthy habits and regular medical check-ups.</string>
+
+    <!-- Credits -->
+    <string name="credits_title">Credits</string>
+    <string name="development_team">Development Team</string>
+    <string name="medical_team">Medical Team</string>
+    <string name="translation_team">Translation Team</string>
+    <string name="app_version">Version 1.0</string>
+    <string name="made_with_love">Made with ❤️ for kidney health</string>
+    <string name="special_thanks">Special Thanks</string>
+    <string name="view_credits">View Credits</string>
+
+    <!-- Main Menu -->
+    <string name="welcome_message">Welcome to EstaSiNefro!</string>
+    <string name="change_language">Change Language</string>
+    <string name="welcome_user">Welcome, %s!</string>
+
+    <!-- Explanation Concepts -->
+    <string name="what_is_nephrotic_syndrome">What is Nephrotic Syndrome?</string>
+    <string name="nephrotic_syndrome_explanation">Nephrotic syndrome is a kidney condition in which the kidneys lose large amounts of protein in the urine. This causes swelling (edema), especially in the feet, ankles, and around the eyes.</string>
+
+    <string name="what_is_proteinuria">What is Proteinuria?</string>
+    <string name="proteinuria_explanation">Proteinuria is the presence of abnormal amounts of protein in the urine. Under normal conditions, only minimal traces of protein should be present, but in nephrotic syndrome more than 3.5 grams can be lost per day.</string>
+
+    <string name="what_is_hypoalbuminemia">What is Hypoalbuminemia?</string>
+    <string name="hypoalbuminemia_explanation">Hypoalbuminemia is the low level of albumin in the blood. Albumin is a protein that helps maintain fluid within blood vessels. When it is lost in urine, fluid leaks into tissues causing swelling.</string>
+
+    <string name="what_is_hyperlipidemia">What is Hyperlipidemia?</string>
+    <string name="hyperlipidemia_explanation">Hyperlipidemia is the increase of fats (lipids) in the blood. It occurs as the liver\'s response to protein loss, producing more cholesterol and triglycerides than normal.</string>
+
+    <string name="what_is_edema">What is Edema?</string>
+    <string name="edema_explanation">Edema is swelling caused by excess fluid trapped in the body\'s tissues. In nephrotic syndrome, it occurs mainly in the legs, ankles, hands, and around the eyes.</string>
+
+    <string name="what_is_postinfectious_gn">What is Post-infectious GN?</string>
+    <string name="postinfectious_gn_explanation">Post-infectious Glomerulonephritis (PIGN) is an immune-mediated kidney disease that occurs after an infection, typically streptococcal. The immune system produces antibodies that mistakenly attack the glomeruli.</string>
+
+    <string name="what_is_glomerulus">What is the Glomerulus?</string>
+    <string name="glomerulus_explanation">The glomerulus is the kidney\'s filtration unit. Each kidney has approximately one million glomeruli that function as tiny filters, removing waste and retaining essential proteins in the blood.</string>
+
+    <string name="what_is_immune_complex">What is Immune Complex?</string>
+    <string name="immune_complex_explanation">Immune complexes are combinations of antibodies and antigens that form during infections. In post-infectious GN, these complexes can deposit in the kidneys and cause inflammation.</string>
+
+    <string name="what_is_complement_c3">What is Complement C3?</string>
+    <string name="complement_c3_explanation">Complement C3 is a protein of the immune system that helps fight infections. In post-infectious GN, its levels are usually low because it is consumed during the inflammatory response.</string>
+
+    <string name="what_is_hematuria">What is Hematuria?</string>
+    <string name="hematuria_explanation">Hematuria is the presence of blood in the urine. It can be visible (red or brown urine) or microscopic. It is a common sign of inflammation in the kidneys.</string>
+
+    <string name="what_is_hypertension">What is Hypertension?</string>
+    <string name="hypertension_explanation">Hypertension is high blood pressure. In kidney diseases, it occurs because the kidneys cannot properly regulate sodium and water, increasing blood volume and pressure.</string>
+
+    <string name="what_is_corticosteroids">What are Corticosteroids?</string>
+    <string name="corticosteroids_explanation">Corticosteroids (like prednisone) are potent anti-inflammatory medications that suppress the immune system. They are used to reduce kidney inflammation and decrease protein loss.</string>
+
+    <string name="what_is_diuretics">What are Diuretics?</string>
+    <string name="diuretics_explanation">Diuretics are medications that help eliminate excess fluid and salt from the body through urine. They are used to control edema and blood pressure in kidney diseases.</string>
+
+    <string name="what_is_dialysis">What is Dialysis?</string>
+    <string name="dialysis_explanation">Dialysis is a treatment that temporarily replaces kidney function when they fail. It filters the blood to remove waste and excess fluid when the kidneys cannot do it.</string>
+
+    <string name="what_is_kidney_biopsy">What is Kidney Biopsy?</string>
+    <string name="kidney_biopsy_explanation">A kidney biopsy is a procedure where a small tissue sample is taken from the kidney to examine it under a microscope. It helps determine the exact type of kidney disease and appropriate treatment.</string>
+
+    <string name="what_is_urinalysis">What is Urinalysis?</string>
+    <string name="urinalysis_explanation">Urinalysis is a fundamental test that detects proteins, blood, and other abnormal substances. It is the first tool for diagnosing and monitoring kidney diseases.</string>
+
+    <string name="what_is_blood_test">What are Blood Tests?</string>
+    <string name="blood_test_explanation">Blood tests measure kidney function (creatinine, BUN), protein levels (albumin), and other markers. They are essential for assessing the severity and progression of kidney disease.</string>
+
+    <string name="what_is_explanation">What is?</string>
+    <string name="key_points">Key Points</string>
+    <string name="related_information">Related Information</string>
+    <string name="back">Back</string>
+    <string name="learn_more_about_edema">Learn more about edema</string>
+    <string name="learn_more_about_proteinuria">Learn more about proteinuria</string>
+    <string name="learn_more_about_hypoalbuminemia">Learn more about hypoalbuminemia</string>
+    <string name="learn_more_about_hyperlipidemia">Learn more about hyperlipidemia</string>
+    <string name="learn_more_about_nephrotic_syndrome">Learn more about nephrotic syndrome</string>
+    <string name="learn_more_about_postinfectious_gn">Learn more about post-infectious GN</string>
+    <string name="learn_more_about_glomerulus">Learn more about the glomerulus</string>
+    <string name="learn_more_about_immune_complex">Learn more about immune complexes</string>
+    <string name="learn_more_about_complement_c3">Learn more about complement C3</string>
+    <string name="learn_more_about_hematuria">Learn more about hematuria</string>
+    <string name="learn_more_about_hypertension">Learn more about hypertension</string>
+    <string name="learn_more_about_corticosteroids">Learn more about corticosteroids</string>
+    <string name="learn_more_about_diuretics">Learn more about diuretics</string>
+    <string name="learn_more_about_dialysis">Learn more about dialysis</string>
+    <string name="learn_more_about_kidney_biopsy">Learn more about kidney biopsy</string>
+    <string name="learn_more_about_urinalysis">Learn more about urinalysis</string>
+    <string name="learn_more_about_blood_test">Learn more about blood tests</string>
+</resources>

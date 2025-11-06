@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EstaSiNefro" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores principales de la aplicación -->
+        <item name="colorPrimary">@color/crimson_blaze</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/gochujang_red</item>
+        <item name="colorOnPrimaryContainer">@color/blue_marble</item>
+
+        <!-- Colores secundarios -->
+        <item name="colorSecondary">@color/blue_marble</item>
+        <item name="colorOnSecondary">@color/gochujang_red</item>
+        <item name="colorSecondaryContainer">@color/cosmos_blue</item>
+        <item name="colorOnSecondaryContainer">@color/blue_marble</item>
+
+        <!-- Colores de fondo -->
+        <item name="android:colorBackground">@color/varden</item>
+        <item name="colorOnBackground">@color/blue_marble</item>
+        <item name="colorSurface">@color/crimson_blaze</item>
+        <item name="colorOnSurface">@color/white</item>
+
+        <!-- Color de la barra de estado -->
+        <item name="android:statusBarColor">@color/gochujang_red</item>
+        <item name="android:navigationBarColor">@color/gochujang_red</item>
+
+        <!-- Color del texto -->
+        <item name="android:textColorPrimary">@color/blue_marble</item>
+        <item name="android:textColorSecondary">@color/cosmos_blue</item>
+    </style>
+
+    <style name="Theme.EstaSiNefro" parent="Base.Theme.EstaSiNefro" />
+</resources>

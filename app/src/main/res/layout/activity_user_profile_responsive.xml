@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/varden"
+    tools:context=".UserProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding">
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/titleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_profile_title"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="@dimen/section_spacing"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Subtítulo -->
+            <TextView
+                android:id="@+id/subtitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_profile_subtitle"
+                    android:textSize="@dimen/card_text_size"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="@dimen/item_spacing"
+                    app:layout_constraintTop_toBottomOf="@id/titleTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Tarjeta de información personal -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileCard"
+                android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/item_spacing"
+                    app:cardCornerRadius="@dimen/card_corner_radius"
+                    app:cardElevation="@dimen/card_elevation"
+                    app:cardBackgroundColor="@color/crimson_blaze"
+                    app:layout_constraintTop_toBottomOf="@id/subtitleTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/default_padding">
+
+                        <!-- Campo de nombre -->
+                    <TextView
+                        android:id="@+id/nameLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name_label"
+                            android:textSize="@dimen/card_text_size"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginBottom="@dimen/text_spacing" />
+
+                    <EditText
+                        android:id="@+id/nameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/button_height"
+                            android:hint="@string/name_hint"
+                            android:textSize="@dimen/button_text_size"
+                            android:textColor="@color/blue_marble"
+                            android:background="@drawable/rounded_background"
+                            android:padding="@dimen/small_padding"
+                            android:layout_marginBottom="@dimen/item_spacing" />
+
+                        <!-- Campo de edad -->
+                    <TextView
+                        android:id="@+id/ageLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/age_label"
+                            android:textSize="@dimen/card_text_size"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginBottom="@dimen/text_spacing" />
+
+                    <EditText
+                        android:id="@+id/ageEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/button_height"
+                            android:hint="@string/age_hint"
+                            android:textSize="@dimen/button_text_size"
+                            android:textColor="@color/blue_marble"
+                            android:background="@drawable/rounded_background"
+                            android:padding="@dimen/small_padding"
+                            android:inputType="number"
+                            android:layout_marginBottom="@dimen/item_spacing" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Botón de guardar -->
+            <Button
+                android:id="@+id/saveButton"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:text="@string/save_button"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_background"
+                    android:layout_marginTop="@dimen/section_spacing"
+                    app:layout_constraintTop_toBottomOf="@id/profileCard"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Espaciado final -->
+            <View
+                android:layout_width="0dp"
+                    android:layout_height="@dimen/large_padding"
+                    app:layout_constraintTop_toBottomOf="@id/saveButton"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

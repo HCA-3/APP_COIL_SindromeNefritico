@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/varden"
+    android:fillViewport="true"
+    tools:context=".CreditsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/credits_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_marble"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Versión de la app -->
+        <TextView
+            android:id="@+id/versionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_version"
+            android:textSize="16sp"
+            android:textColor="@color/blue_marble"
+            android:textAlignment="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Equipo de Desarrollo -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/crimson_blaze">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/development_team"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
+                    android:textAlignment="center" />
+
+                <!-- Espacios para 2 personas del equipo de desarrollo -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Persona 1 Desarrollo -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/dev1ImageView"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@android:drawable/ic_menu_camera"
+                            android:background="@drawable/person_photo_background"
+                            android:padding="4dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/blue_marble" />
+
+                        <TextView
+                            android:id="@+id/dev1NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Desarrollador 1"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="4dp" />
+
+                        <TextView
+                            android:id="@+id/dev1EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="dev1@estasinefro.com"
+                            android:textSize="12sp"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <!-- Persona 2 Desarrollo -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="8dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/dev2ImageView"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@android:drawable/ic_menu_camera"
+                            android:background="@drawable/person_photo_background"
+                            android:padding="4dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/blue_marble" />
+
+                        <TextView
+                            android:id="@+id/dev2NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Desarrollador 2"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="4dp" />
+
+                        <TextView
+                            android:id="@+id/dev2EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="dev2@estasinefro.com"
+                            android:textSize="12sp"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Equipo Médico -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/crimson_blaze">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medical_team"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
+                    android:textAlignment="center" />
+
+                <!-- Espacios para 5 personas del equipo médico -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Columna 1 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="4dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/med1ImageView"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@android:drawable/ic_menu_myplaces"
+                            android:background="@drawable/person_photo_background"
+                            android:padding="2dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/blue_marble" />
+
+                        <TextView
+                            android:id="@+id/med1NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Médico 1"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp" />
+
+                        <TextView
+                            android:id="@+id/med1EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="med1@estasinefro.com"
+                            android:textSize="10sp"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <!-- Columna 2 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/med2ImageView"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@android:drawable/ic_menu_myplaces"
+                            android:background="@drawable/person_photo_background"
+                            android:padding="2dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/blue_marble" />
+
+                        <TextView
+                            android:id="@+id/med2NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Médico 2"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp" />
+
+                        <TextView
+                            android:id="@+id/med2EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="med2@estasinefro.com"
+                            android:textSize="10sp"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <!-- Columna 3 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/med3ImageView"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@android:drawable/ic_menu_myplaces"
+                            android:background="@drawable/person_photo_background"
+                            android:padding="2dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/blue_marble" />
+
+                        <TextView
+                            android:id="@+id/med3NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Médico 3"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp" />
+
+                        <TextView
+                            android:id="@+id/med3EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="med3@estasinefro.com"
+                            android:textSize="10sp"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <!-- Columna 4 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/med4ImageView"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@android:drawable/ic_menu_myplaces"
+                            android:background="@drawable/person_photo_background"
+                            android:padding="2dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/blue_marble" />
+
+                        <TextView
+                            android:id="@+id/med4NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Médico 4"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp" />
+
+                        <TextView
+                            android:id="@+id/med4EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="med4@estasinefro.com"
+                            android:textSize="10sp"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <!-- Columna 5 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="4dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/med5ImageView"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@android:drawable/ic_menu_myplaces"
+                            android:background="@drawable/person_photo_background"
+                            android:padding="2dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/blue_marble" />
+
+                        <TextView
+                            android:id="@+id/med5NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Médico 5"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp" />
+
+                        <TextView
+                            android:id="@+id/med5EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="med5@estasinefro.com"
+                            android:textSize="10sp"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Equipo de Traducción -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/crimson_blaze">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/translation_team"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
+                    android:textAlignment="center" />
+
+                <!-- Espacios para 5 personas del equipo de traducción -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Columna 1 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="4dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/trans1ImageView"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@android:drawable/ic_menu_preferences"
+                            android:background="@drawable/person_photo_background"
+                            android:padding="2dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/blue_marble" />
+
+                        <TextView
+                            android:id="@+id/trans1NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Traductor 1"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp" />
+
+                        <TextView
+                            android:id="@+id/trans1EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="trans1@estasinefro.com"
+                            android:textSize="10sp"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <!-- Columna 2 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/trans2ImageView"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@android:drawable/ic_menu_preferences"
+                            android:background="@drawable/person_photo_background"
+                            android:padding="2dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/blue_marble" />
+
+                        <TextView
+                            android:id="@+id/trans2NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Traductor 2"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp" />
+
+                        <TextView
+                            android:id="@+id/trans2EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="trans2@estasinefro.com"
+                            android:textSize="10sp"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <!-- Columna 3 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/trans3ImageView"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@android:drawable/ic_menu_preferences"
+                            android:background="@drawable/person_photo_background"
+                            android:padding="2dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/blue_marble" />
+
+                        <TextView
+                            android:id="@+id/trans3NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Traductor 3"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp" />
+
+                        <TextView
+                            android:id="@+id/trans3EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="trans3@estasinefro.com"
+                            android:textSize="10sp"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <!-- Columna 4 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/trans4ImageView"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@android:drawable/ic_menu_preferences"
+                            android:background="@drawable/person_photo_background"
+                            android:padding="2dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/blue_marble" />
+
+                        <TextView
+                            android:id="@+id/trans4NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Traductor 4"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp" />
+
+                        <TextView
+                            android:id="@+id/trans4EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="trans4@estasinefro.com"
+                            android:textSize="10sp"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <!-- Columna 5 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="4dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/trans5ImageView"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@android:drawable/ic_menu_preferences"
+                            android:background="@drawable/person_photo_background"
+                            android:padding="2dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/blue_marble" />
+
+                        <TextView
+                            android:id="@+id/trans5NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Traductor 5"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp" />
+
+                        <TextView
+                            android:id="@+id/trans5EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="trans5@estasinefro.com"
+                            android:textSize="10sp"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Mensaje final -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/made_with_love"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="@color/blue_marble"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón volver -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Volver"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/gochujang_red" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/varden"
+    tools:context=".CreditsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding">
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/credits_title"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue_marble"
+                android:layout_marginBottom="@dimen/section_spacing"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Versión -->
+            <TextView
+                android:id="@+id/versionTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/app_version"
+                android:textSize="@dimen/card_text_size"
+                android:textColor="@color/blue_marble"
+                android:layout_marginBottom="@dimen/item_spacing"
+                app:layout_constraintTop_toBottomOf="@id/titleTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Mensaje -->
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/made_with_love"
+                android:textSize="@dimen/button_text_size"
+                android:textColor="@color/blue_marble"
+                android:layout_marginBottom="@dimen/section_spacing"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/versionTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Equipo de Desarrollo -->
+            <TextView
+                android:id="@+id/devTeamTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/development_team"
+                android:textSize="@dimen/subtitle_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue_marble"
+                android:layout_marginBottom="@dimen/item_spacing"
+                app:layout_constraintTop_toBottomOf="@id/messageTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Tarjetas de desarrolladores -->
+            <LinearLayout
+                android:id="@+id/devTeamLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/section_spacing"
+                app:layout_constraintTop_toBottomOf="@id/devTeamTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- Desarrollador 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dev1Card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/card_margin"
+                    app:cardCornerRadius="@dimen/card_corner_radius"
+                    app:cardElevation="@dimen/card_elevation"
+                    app:cardBackgroundColor="@color/crimson_blaze"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/dev2Card"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/default_padding"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/dev1ImageView"
+                            android:layout_width="@dimen/icon_size"
+                            android:layout_height="@dimen/icon_size"
+                            android:src="@drawable/person_placeholder"
+                            android:layout_marginBottom="@dimen/text_spacing" />
+
+                        <TextView
+                            android:id="@+id/dev1NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Desarrollador Principal"
+                            android:textSize="@dimen/small_text_size"
+                            android:textColor="@color/white"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/dev1EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="lead@estasinefro.com"
+                            android:textSize="@dimen/small_text_size"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Desarrollador 2 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dev2Card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/card_corner_radius"
+                    app:cardElevation="@dimen/card_elevation"
+                    app:cardBackgroundColor="@color/crimson_blaze"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/dev1Card"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/default_padding"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/dev2ImageView"
+                            android:layout_width="@dimen/icon_size"
+                            android:layout_height="@dimen/icon_size"
+                            android:src="@drawable/person_placeholder"
+                            android:layout_marginBottom="@dimen/text_spacing" />
+
+                        <TextView
+                            android:id="@+id/dev2NameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Desarrollador Secundario"
+                            android:textSize="@dimen/small_text_size"
+                            android:textColor="@color/white"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/dev2EmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="support@estasinefro.com"
+                            android:textSize="@dimen/small_text_size"
+                            android:textColor="@color/blue_marble"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- Equipo Médico -->
+            <TextView
+                android:id="@+id/medTeamTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/medical_team"
+                android:textSize="@dimen/subtitle_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue_marble"
+                android:layout_marginBottom="@dimen/item_spacing"
+                app:layout_constraintTop_toBottomOf="@id/devTeamLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Tarjetas de médicos (Grid) -->
+            <LinearLayout
+                android:id="@+id/medTeamLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/section_spacing"
+                app:layout_constraintTop_toBottomOf="@id/medTeamTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- Columna 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/card_margin">
+
+                    <!-- Médico 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:cardElevation="@dimen/card_elevation"
+                        app:cardBackgroundColor="@color/crimson_blaze">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/default_padding"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/med1ImageView"
+                                android:layout_width="@dimen/icon_size"
+                                android:layout_height="@dimen/icon_size"
+                                android:src="@drawable/person_placeholder"
+                                android:layout_marginBottom="@dimen/text_spacing" />
+
+                            <TextView
+                                android:id="@+id/med1NameTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Dr. Especialista Renal"
+                                android:textSize="@dimen/small_text_size"
+                                android:textColor="@color/white"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/med1EmailTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="renal@estasinefro.com"
+                                android:textSize="@dimen/small_text_size"
+                                android:textColor="@color/blue_marble"
+                                android:textAlignment="center" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Médico 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_margin"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:cardElevation="@dimen/card_elevation"
+                        app:cardBackgroundColor="@color/crimson_blaze">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/default_padding"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/med2ImageView"
+                                android:layout_width="@dimen/icon_size"
+                                android:layout_height="@dimen/icon_size"
+                                android:src="@drawable/person_placeholder"
+                                android:layout_marginBottom="@dimen/text_spacing" />
+
+                            <TextView
+                                android:id="@+id/med2NameTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Dra. Nefróloga Clínica"
+                                android:textSize="@dimen/small_text_size"
+                                android:textColor="@color/white"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/med2EmailTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="nefro@estasinefro.com"
+                                android:textSize="@dimen/small_text_size"
+                                android:textColor="@color/blue_marble"
+                                android:textAlignment="center" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <!-- Columna 2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Médico 3 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:cardElevation="@dimen/card_elevation"
+                        app:cardBackgroundColor="@color/crimson_blaze">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/default_padding"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/med3ImageView"
+                                android:layout_width="@dimen/icon_size"
+                                android:layout_height="@dimen/icon_size"
+                                android:src="@drawable/person_placeholder"
+                                android:layout_marginBottom="@dimen/text_spacing" />
+
+                            <TextView
+                                android:id="@+id/med3NameTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Dr. Investigador Médico"
+                                android:textSize="@dimen/small_text_size"
+                                android:textColor="@color/white"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/med3EmailTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="research@estasinefro.com"
+                                android:textSize="@dimen/small_text_size"
+                                android:textColor="@color/blue_marble"
+                                android:textAlignment="center" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Médico 4 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_margin"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:cardElevation="@dimen/card_elevation"
+                        app:cardBackgroundColor="@color/crimson_blaze">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/default_padding"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/med4ImageView"
+                                android:layout_width="@dimen/icon_size"
+                                android:layout_height="@dimen/icon_size"
+                                android:src="@drawable/person_placeholder"
+                                android:layout_marginBottom="@dimen/text_spacing" />
+
+                            <TextView
+                                android:id="@+id/med4NameTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Dra. Pediatra Especializada"
+                                android:textSize="@dimen/small_text_size"
+                                android:textColor="@color/white"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/med4EmailTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="pedia@estasinefro.com"
+                                android:textSize="@dimen/small_text_size"
+                                android:textColor="@color/blue_marble"
+                                android:textAlignment="center" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Médico 5 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:cardElevation="@dimen/card_elevation"
+                        app:cardBackgroundColor="@color/crimson_blaze">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/default_padding"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/med5ImageView"
+                                android:layout_width="@dimen/icon_size"
+                                android:layout_height="@dimen/icon_size"
+                                android:src="@drawable/person_placeholder"
+                                android:layout_marginBottom="@dimen/text_spacing" />
+
+                            <TextView
+                                android:id="@+id/med5NameTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Dr. Médico General"
+                                android:textSize="@dimen/small_text_size"
+                                android:textColor="@color/white"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/med5EmailTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="general@estasinefro.com"
+                                android:textSize="@dimen/small_text_size"
+                                android:textColor="@color/blue_marble"
+                                android:textAlignment="center" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Botón Cerrar -->
+            <Button
+                android:id="@+id/closeButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/close"
+                android:textSize="@dimen/button_text_size"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_background"
+                android:layout_marginTop="@dimen/section_spacing"
+                app:layout_constraintTop_toBottomOf="@id/medTeamLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

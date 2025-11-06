@@ -1,0 +1,492 @@
+<resources>
+    <string name="app_name">EstaSiNefro</string>
+
+    <!-- Language Selection Screen -->
+    <string name="select_language">Seleccionar Idioma</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="choose_language">Por favor, selecciona tu idioma preferido</string>
+    <string name="continue_button">Continuar</string>
+
+    <!-- Languages -->
+    <string name="spanish">Español</string>
+    <string name="english">English</string>
+    <string name="french">Français</string>
+    <string name="german">Deutsch</string>
+    <string name="italian">Italiano</string>
+    <string name="portuguese">Português</string>
+
+    <!-- User Profile Screen -->
+    <string name="user_profile_title">Completa tu Perfil</string>
+    <string name="user_profile_subtitle">Cuéntanos un poco sobre ti</string>
+    <string name="name_label">Nombre</string>
+    <string name="name_hint">Ingresa tu nombre completo</string>
+    <string name="age_label">Edad</string>
+    <string name="age_hint">Ingresa tu edad</string>
+    <string name="save_button">Guardar</string>
+    <string name="name_required">El nombre es requerido</string>
+    <string name="age_required">La edad es requerida</string>
+    <string name="invalid_age">Por favor ingresa una edad válida</string>
+    <string name="min_age">Debes tener al menos 1 año</string>
+    <string name="max_age">La edad máxima permitida es 120 años</string>
+
+    <!-- Profile Summary Screen -->
+    <string name="profile_summary_title">Tu Perfil</string>
+    <string name="profile_complete_title">¡Perfil Completado!</string>
+    <string name="profile_subtitle">Aquí está tu información</string>
+    <string name="personal_info">Información Personal</string>
+    <string name="name_info">Nombre</string>
+    <string name="age_info">Edad</string>
+    <string name="language_info">Idioma</string>
+    <string name="years_old">años</string>
+    <string name="continue_to_app">Continuar a la App</string>
+    <string name="edit_profile">Editar Perfil</string>
+    <string name="profile_created_date">Perfil creado: %s</string>
+
+    <!-- Medical Content -->
+    <string name="medical_info_title">Información Médica</string>
+    <string name="nephrotic_syndrome">Síndrome Nefrítico</string>
+    <string name="postinfectious_gn">Glomerulonefritis Postinfecciosa</string>
+    <string name="habits_tracking">Seguimiento de Hábitos</string>
+    <string name="medical_survey">Encuesta Médica</string>
+    <string name="learn_more">Aprender Más</string>
+    <string name="start_tracking">Comenzar Seguimiento</string>
+    <string name="take_survey">Realizar Encuesta</string>
+
+    <!-- Medical Disclaimer -->
+    <string name="medical_disclaimer">Aviso Médico Importante</string>
+    <string name="disclaimer_text">Esta aplicación proporciona información educativa y herramientas de seguimiento. Sin embargo, los resultados de la encuesta no reemplazan un diagnóstico médico profesional. Siempre consulte a un médico para obtener un diagnóstico preciso y exámenes médicos adecuados.</string>
+    <string name="i_understand">Entiendo</string>
+
+    <!-- Nephrotic Syndrome Info -->
+    <string name="ns_title">¿Qué es el Síndrome Nefrítico?</string>
+    <string name="ns_description">El síndrome nefrítico es un conjunto de signos y síntomas que indican inflamación de los glomérulos renales. Se caracteriza por hematuria (sangre en orina), proteinuria (proteínas en orina), hipertensión y edema. Es una condición renal aguda que requiere atención médica inmediata.</string>
+
+    <string name="ns_detailed_explanation">El síndrome nefrítico representa una inflamación glomerular aguda que afecta la capacidad de filtración de los riñones. A diferencia del síndrome nefrótico, se caracteriza por una pérdida selectiva de proteínas y daño inflamatorio activo. Los glomérulos inflamados permiten el paso de sangre y proteínas, pero retienen líquidos, causando hipertensión y edema leve.</string>
+
+    <string name="ns_symptoms">Síntomas Principales:</string>
+    <string name="ns_symptom1">• Orina oscura, rojiza o con sangre (hematuria macroscópica)</string>
+    <string name="ns_symptom2">• Hinchazón (edema) leve en cara, párpados y tobillos</string>
+    <string name="ns_symptom3">• Presión arterial elevada (hipertensión)</string>
+    <string name="ns_symptom4">• Disminución del volumen urinario (oliguria)</string>
+    <string name="ns_symptom5">• Fatiga y debilidad generalizada</string>
+    <string name="ns_symptom6">• Dolor lumbar o en flancos</string>
+    <string name="ns_symptom7">• Náuseas y pérdida de apetito</string>
+    <string name="ns_symptom8">• Dolor de cabeza por hipertensión</string>
+
+    <string name="ns_laboratory_findings">Hallazgos de Laboratorio:</string>
+    <string name="ns_lab1">• Proteinuria: menos de 3.5g/día (diferencia clave con nefrótico)</string>
+    <string name="ns_lab2">• Hematuria: glóbulos rojos y cilindros hemáticos</string>
+    <string name="ns_lab3">• Creatinina sérica elevada (disfunción renal)</string>
+    <string name="ns_lab4">• Complemento C3 disminuido (en casos postinfecciosos)</string>
+    <string name="ns_lab5">• Sedimento urinario activo con cilindros</string>
+
+    <string name="ns_causes">Causas Comunes:</string>
+    <string name="ns_cause1">• Glomerulonefritis postinfecciosa (estreptococo)</string>
+    <string name="ns_cause2">• Enfermedades autoinmunes (lupus, púrpura de Henoch-Schönlein)</string>
+    <string name="ns_cause3">• Enfermedades vasculares (vasculitis, poliarteritis)</string>
+    <string name="ns_cause4">• Glomerulonefritis membranoproliferativa</string>
+    <string name="ns_cause5">• Nefropatía por IgA (enfermedad de Berger)</string>
+    <string name="ns_cause6">• Síndrome de Goodpasture</string>
+
+    <string name="ns_diagnosis">Diagnóstico:</string>
+    <string name="ns_diag1">• Análisis de orina completo</string>
+    <string name="ns_diag2">• Pruebas de función renal (creatinina, BUN)</string>
+    <string name="ns_diag3">• Niveles de complemento (C3, C4)</string>
+    <string name="ns_diag4">• Anticuerpos antiestreptolisina (ASO)</string>
+    <string name="ns_diag5">• Ecografía renal</string>
+    <string name="ns_diag6">• Biopsia renal (en casos seleccionados)</string>
+
+    <string name="ns_treatment">Tratamiento:</string>
+    <string name="ns_treat1">• Reposo en cama durante fase aguda</string>
+    <string name="ns_treat2">• Restricción de sodio y líquidos</string>
+    <string name="ns_treat3">• Medicamentos antihipertensivos</string>
+    <string name="ns_treat4">• Diuréticos para controlar edema</string>
+    <string name="ns_treat5">• Antibióticos si hay infección activa</string>
+    <string name="ns_treat6">• Corticosteroides en casos autoinmunes</string>
+    <string name="ns_treat7">• Inmunosupresores en casos severos</string>
+
+    <string name="ns_prognosis">Pronóstico:</string>
+    <string name="ns_prog1">• Excelente recuperación en niños postinfecciosos (90-95%)</string>
+    <string name="ns_prog2">• Recuperación más lenta en adultos</string>
+    <string name="ns_prog3">• Riesgo de enfermedad renal crónica si no se trata</string>
+    <string name="ns_prog4">• Seguimiento médico indispensable por 1-2 años</string>
+
+    <string name="ns_complications">Posibles Complicaciones:</string>
+    <string name="ns_comp1">• Insuficiencia renal aguda</string>
+    <string name="ns_comp2">• Hipertensión crónica</string>
+    <string name="ns_comp3">• Enfermedad renal crónica</string>
+    <string name="ns_comp4">• Sobrecarga de líquidos y edema pulmonar</string>
+    <string name="ns_comp5">• Trastornos electrolíticos</string>
+
+    <string name="ns_prevention">Prevención:</string>
+    <string name="ns_prev1">• Tratamiento temprano de infecciones estreptocócicas</string>
+    <string name="ns_prev2">• Control adecuado de enfermedades autoinmunes</string>
+    <string name="ns_prev3">• Evitar nefrotóxicos (AINES, ciertos antibióticos)</string>
+    <string name="ns_prev4">• Controles médicos regulares si hay factores de riesgo</string>
+
+    <!-- Postinfectious GN Info -->
+    <string name="pgn_title">Glomerulonefritis Postinfecciosa</string>
+    <string name="pgn_description">La glomerulonefritis postinfecciosa es una enfermedad renal que ocurre después de una infección, comúnmente faringitis o impétigo causados por bacterias estreptocócicas. El sistema inmunitario ataca los glomérulos renales por error.</string>
+    <string name="pgn_timeline">Línea de Tiempo Típica:</string>
+    <string name="pgn_timeline1">• Infección inicial (1-3 semanas antes)</string>
+    <string name="pgn_timeline2">• Período de latencia sin síntomas</string>
+    <string name="pgn_timeline3">• Aparición súbita de síntomas renales</string>
+    <string name="pgn_treatment">Tratamiento:</string>
+    <string name="pgn_treatment1">• Antibióticos para eliminar infección residual</string>
+    <string name="pgn_treatment2">• Control de la presión arterial</string>
+    <string name="pgn_treatment3">• Restricción de sal y líquidos</string>
+    <string name="pgn_treatment4">• Monitoreo médico constante</string>
+
+    <!-- Postinfectious GN Symptoms -->
+    <string name="pgn_symptoms">Síntomas Principales:</string>
+    <string name="pgn_symptom1">• Orina oscura o con sangre (color té o cola)</string>
+    <string name="pgn_symptom2">• Hinchazón (edema) en cara, párpados y tobillos</string>
+    <string name="pgn_symptom3">• Presión arterial elevada</string>
+    <string name="pgn_symptom4">• Disminución del volumen urinario</string>
+    <string name="pgn_symptom5">• Fatiga y debilidad</string>
+    <string name="pgn_symptom6">• Dolores de cabeza</string>
+
+    <!-- Habits Tracking -->
+    <string name="habits_title">Seguimiento de Hábitos Saludables</string>
+    <string name="water_intake">Consumo de Agua</string>
+    <string name="salt_intake">Consumo de Sal</string>
+    <string name="blood_pressure">Presión Arterial</string>
+    <string name="weight">Peso Corporal</string>
+    <string name="urination_frequency">Frecuencia Urinaria</string>
+    <string name="swelling_level">Nivel de Hinchazón</string>
+    <string name="save_record">Guardar Registro</string>
+    <string name="view_history">Ver Historial</string>
+
+    <!-- Survey -->
+    <string name="survey_title">Evaluación de Síntomas</string>
+    <string name="survey_intro">Responda sinceramente las siguientes preguntas para evaluar posibles síntomas relacionados con problemas renales.</string>
+    <string name="question1">¿Ha notado sangre o coloración oscura en su orina recientemente?</string>
+    <string name="question2">¿Experimenta hinchazón en cara, manos, piernas o pies?</string>
+    <string name="question3">¿Ha tenido presión arterial elevada?</string>
+    <string name="question4">¿Ha disminuido la cantidad de orina que produce?</string>
+    <string name="question5">¿Ha tenido alguna infección (garganta, piel) en las últimas semanas?</string>
+    <string name="question6">¿Se siente más cansado de lo habitual?</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="sometimes">A veces</string>
+    <string name="survey_results">Resultados de la Evaluación</string>
+    <string name="high_risk">Alto Riesgo</string>
+    <string name="moderate_risk">Riesgo Moderado</string>
+    <string name="low_risk">Bajo Riesgo</string>
+    <string name="recommendation_doctor">Recomendación: Consulte a un médico inmediatamente para una evaluación completa.</string>
+    <string name="recommendation_monitor">Recomendación: Monitoree sus síntomas y consulte a un médico si persisten.</string>
+    <string name="recommendation_healthy">Recomendación: Mantenga hábitos saludables y controles médicos regulares.</string>
+
+    <!-- Credits Screen -->
+    <string name="credits_title">Créditos</string>
+    <string name="development_team">Equipo de Desarrollo</string>
+    <string name="medical_team">Equipo Médico</string>
+    <string name="translation_team">Equipo de Traducción</string>
+    <string name="app_version">Versión 1.0</string>
+    <string name="made_with_love">Hecho con ❤️ para la salud renal</string>
+    <string name="special_thanks">Agradecimientos Especiales</string>
+    <string name="view_credits">Ver Créditos</string>
+
+    <!-- Detailed Diagnosis Info -->
+    <string name="diagnosis_title">Diagnóstico y Tratamiento</string>
+    <string name="what_is_gn">¿Qué es la Glomerulonefritis?</string>
+    <string name="introduction_text">Inflamación de los riñones que afecta los filtros de sangre</string>
+    <string name="epidemiology_title">Epidemiología</string>
+    <string name="epidemiology_text">Afecta a 470,000 personas nuevas cada año en el mundo</string>
+    <string name="risk_factors_title">Factores de Riesgo</string>
+    <string name="age_risk">Más común en niños de 5-15 años</string>
+    <string name="living_conditions">Condiciones de vida y nivel socioeconómico</string>
+    <string name="genetic_factors">Antecedentes genéticos y familiares</string>
+    <string name="other_diseases">Otras enfermedades que debilitan el sistema inmune</string>
+    <string name="gender_risk">Más frecuente en niños y hombres jóvenes</string>
+    <string name="causes_title">Causas</string>
+    <string name="immune_reaction">El sistema inmune reacciona para defenderse pero también inflama los riñones</string>
+    <string name="viruses">Virus</string>
+    <string name="bacteria">Bacterias</string>
+    <string name="fungi">Hongos</string>
+    <string name="parasites">Parásitos</string>
+    <string name="symptoms_title">Síntomas</string>
+    <string name="symptoms_timeline">Los síntomas aparecen entre 1-2 semanas después de la infección</string>
+    <string name="bloody_urine">Orina con sangre (color té o cola)</string>
+    <string name="swelling">Hinchazón (edema) en cara, párpados, piernas, pies</string>
+    <string name="high_bp">Presión arterial alta (tipo "coca-cola")</string>
+    <string name="less_urine">Poca orina o dificultad para orinar</string>
+    <string name="headache">Dolores de cabeza intensos</string>
+    <string name="fatigue">Muchas personas orinan menos de lo normal</string>
+    <string name="breathing">Dificultad para respirar</string>
+    <string name="heart_problems">Problemas del corazón por retención de líquidos</string>
+    <string name="other_symptoms">Otros síntomas menos comunes</string>
+    <string name="anemia">Anemia leve por exceso de agua en sangre</string>
+    <string name="potassium">Exceso de potasio que causa debilidad</string>
+    <string name="kidney_failure">Insuficiencia renal aguda que puede requerir diálisis</string>
+    <string name="damage_mechanism_title">Mecanismo del Daño</string>
+    <string name="c3_complex">Complejo inmune C3 que combate infecciones</string>
+    <string name="c3_low">Normalmente bajo en esta enfermedad</string>
+    <string name="immune_complexes">Inmunocomplejos que se adhieren a los riñones</string>
+    <string name="direct_attack">Algunos virus atacan directamente las células renales</string>
+    <string name="protein_loss">Pérdida de proteínas en orina</string>
+    <string name="cell_damage">Sustancias que dañan directamente las células renales</string>
+    <string name="diagnosis_process_title">¿Cómo se diagnostica?</string>
+    <string name="clinical_history">Historia clínica y análisis de laboratorio</string>
+    <string name="blood_protein">Buscan sangre y proteínas en orina</string>
+    <string name="antibodies">Miden anticuerpos como ASO y anti-ADNasa B</string>
+    <string name="kidney_function">Revisan valores de creatinina y BUN</string>
+    <string name="complement">Están trabajando los complementos séricos (C3, C4)</string>
+    <string name="allergy">Si hay alergia, usan eritromicina en lugar de penicilina</string>
+    <string name="treatment_title">Tratamiento</string>
+    <string name="treatment_goal">Aliviar síntomas y prevenir complicaciones</string>
+    <string name="rest">Descansar hasta que los síntomas mejoren</string>
+    <string name="salt_fluid">Reducir sal y líquidos si hay hinchazón o presión alta</string>
+    <string name="bp_meds">Medicamentos para controlar la presión arterial</string>
+    <string name="diuretics">Diuréticos para eliminar exceso de líquidos</string>
+    <string name="antibiotics">Antibióticos (penicilina) durante 10 días para eliminar bacteria</string>
+    <string name="allergy_alt">Si hay alergia, se usa eritromicina</string>
+    <string name="monitoring">Monitorear función renal y presión arterial</string>
+    <string name="prevention_title">Prevención</string>
+    <string name="infection_control">Controlar infecciones por estreptococo rápidamente</string>
+    <string name="throat_culture">Hacer cultivo de garganta si hay infección</string>
+    <string name="skin_treatment">Tratar infecciones en la piel adecuadamente</string>
+    <string name="follow_up">Seguimiento médico regular después de la enfermedad</string>
+    <string name="detailed_info">Información Detallada</string>
+    <string name="learn_more_detailed">Aprender Más</string>
+
+    <!-- Main Screen -->
+    <string name="welcome_message">¡Bienvenido a EstaSiNefro!</string>
+    <string name="change_language">Cambiar Idioma</string>
+    <string name="welcome_user">¡Bienvenido, %s!</string>
+    <string name="view_profile">Ver Perfil</string>
+
+    <!-- Información Adicional Explicativa -->
+    <string name="what_is_nephrotic_syndrome">¿Qué es el Síndrome Nefrótico?</string>
+    <string name="nephrotic_syndrome_explanation">El Síndrome Nefrótico es una condición renal en la que los riñones pierden grandes cantidades de proteína en la orina. Esto causa hinchazón (edema), especialmente en pies, tobillos y alrededor de los ojos.</string>
+
+    <string name="what_is_proteinuria">¿Qué es la Proteinuria?</string>
+    <string name="proteinuria_explanation">La proteinuria es la presencia de cantidades anormales de proteína en la orina. En condiciones normales, solo debería haber trazas mínimas de proteína, pero en el Síndrome Nefrótico pueden perderse más de 3.5 gramos por día.</string>
+
+    <string name="what_is_hypoalbuminemia">¿Qué es la Hipoalbuminemia?</string>
+    <string name="hypoalbuminemia_explanation">La hipoalbuminemia es el nivel bajo de albúmina en la sangre. La albúmina es una proteína importante que mantiene el líquido en los vasos sanguíneos. Cuando se pierde por la orina, el líquido se escapa a los tejidos causando edema.</string>
+
+    <string name="what_is_hyperlipidemia">¿Qué es la Hiperlipidemia?</string>
+    <string name="hyperlipidemia_explanation">La hiperlipidemia es el aumento de grasas (lípidos) en la sangre. Ocurre como respuesta del hígado a la pérdida de proteínas, produciendo más colesterol y triglicéridos de lo normal.</string>
+
+    <string name="what_is_edema">¿Qué es el Edema?</string>
+    <string name="edema_explanation">El edema es la hinchazón causada por el exceso de líquido atrapado en los tejidos del cuerpo. En el Síndrome Nefrótico, ocurre principalmente en piernas, tobillos, manos y alrededor de los ojos.</string>
+
+    <string name="what_is_postinfectious_gn">¿Qué es la GN Postinfecciosa?</string>
+    <string name="postinfectious_gn_explanation">La Glomerulonefritis Postinfecciosa (GNPI) es una enfermedad renal inmunomediada que ocurre 1-3 semanas después de una infección, comúnmente faringitis o impétigo por estreptococo beta-hemolítico del grupo A. El sistema inmune produce anticuerpos contra la infección que por error atacan los glomérulos renales, causando inflamación aguda y daño renal. Representa una reacción de hipersensibilidad tipo III donde los complejos antígeno-anticuerpo se depositan en los glomérulos.</string>
+
+    <string name="what_is_glomerulus">¿Qué es el Glomérulo?</string>
+    <string name="glomerulus_explanation">El glomérulo es la unidad de filtración del riñón. Cada riñón tiene aproximadamente un millón de glomérulos que funcionan como pequeños filtros, eliminando desechos y reteniendo proteínas esenciales en la sangre.</string>
+
+    <string name="what_is_immune_complex">¿Qué es el Complejo Inmune?</string>
+    <string name="immune_complex_explanation">Los complejos inmunes son combinaciones de anticuerpos y antígenos que se forman durante las infecciones. En la GN Postinfecciosa, estos complejos pueden depositarse en los riñones y causar inflamación.</string>
+
+    <string name="what_is_complement_c3">¿Qué es el Complemento C3?</string>
+    <string name="complement_c3_explanation">El Complemento C3 es una proteína del sistema inmune que ayuda a combatir infecciones. En la GN Postinfecciosa, sus niveles suelen estar bajos porque se consume durante la respuesta inflamatoria.</string>
+
+    <string name="what_is_hematuria">¿Qué es la Hematuria?</string>
+    <string name="hematuria_explanation">La hematuria es la presencia de sangre en la orina. Puede ser visible (orina roja o marrón) o microscópica. Es un signo común de inflamación en los riñones.</string>
+
+    <string name="what_is_hypertension">¿Qué es la Hipertensión?</string>
+    <string name="hypertension_explanation">La hipertensión es la presión arterial elevada. En las enfermedades renales, ocurre porque los riñones no pueden regular adecuadamente el sodio y el agua, aumentando el volumen sanguíneo y la presión.</string>
+
+    <string name="what_is_corticosteroids">¿Qué son los Corticosteroides?</string>
+    <string name="corticosteroids_explanation">Los corticosteroides (como la prednisona) son medicamentos antiinflamatorios potentes que suprimen el sistema inmune. Se usan para reducir la inflamación de los riñones y disminuir la pérdida de proteínas.</string>
+
+    <string name="what_is_diuretics">¿Qué son los Diuréticos?</string>
+    <string name="diuretics_explanation">Los diuréticos son medicamentos que ayudan a eliminar el exceso de líquido y sal del cuerpo a través de la orina. Se usan para controlar el edema y la presión arterial en las enfermedades renales.</string>
+
+    <string name="what_is_dialysis">¿Qué es la Diálisis?</string>
+    <string name="dialysis_explanation">La diálisis es un tratamiento que reemplaza temporalmente la función de los riñones cuando fallan. Filtra la sangre para eliminar desechos y exceso de líquido cuando los riñones no pueden hacerlo.</string>
+
+    <string name="what_is_kidney_biopsy">¿Qué es la Biopsia Renal?</string>
+    <string name="kidney_biopsy_explanation">La biopsia renal es un procedimiento donde se toma una pequeña muestra de tejido del riñón para examinarla bajo microscopio. Ayuda a determinar el tipo exacto de enfermedad renal y el tratamiento adecuado.</string>
+
+    <string name="what_is_urinalysis">¿Qué es el Análisis de Orina?</string>
+    <string name="urinalysis_explanation">El análisis de orina es una prueba fundamental que detecta proteínas, sangre y otras sustancias anormales. Es la primera herramienta para diagnosticar y monitorear las enfermedades renales.</string>
+
+    <string name="what_is_blood_test">¿Qué son los Análisis de Sangre?</string>
+    <string name="blood_test_explanation">Los análisis de sangre miden la función renal (creatinina, urea), niveles de proteínas (albúmina) y otros marcadores. Son esenciales para evaluar la gravedad y el progreso de la enfermedad renal.</string>
+
+    <!-- Strings para Activity de Explicación -->
+    <string name="what_is_explanation">¿Qué es?</string>
+    <string name="key_points">Puntos Clave</string>
+    <string name="related_information">Información Relacionada</string>
+    <string name="back">Atrás</string>
+
+    <!-- Strings para botones de información -->
+    <string name="learn_more_about_edema">Aprende más sobre el edema</string>
+    <string name="learn_more_about_proteinuria">Aprende más sobre la proteinuria</string>
+    <string name="learn_more_about_hypoalbuminemia">Aprende más sobre la hipoalbuminemia</string>
+    <string name="learn_more_about_hyperlipidemia">Aprende más sobre la hiperlipidemia</string>
+    <string name="learn_more_about_nephrotic_syndrome">Aprende más sobre el síndrome nefrótico</string>
+    <string name="learn_more_about_postinfectious_gn">Aprende más sobre la GN postinfecciosa</string>
+    <string name="learn_more_about_glomerulus">Aprende más sobre el glomérulo</string>
+    <string name="learn_more_about_immune_complex">Aprende más sobre los complejos inmunes</string>
+    <string name="learn_more_about_complement_c3">Aprende más sobre el complemento C3</string>
+    <string name="learn_more_about_hematuria">Aprende más sobre la hematuria</string>
+    <string name="learn_more_about_hypertension">Aprende más sobre la hipertensión</string>
+    <string name="learn_more_about_corticosteroids">Aprende más sobre los corticosteroides</string>
+    <string name="learn_more_about_diuretics">Aprende más sobre los diuréticos</string>
+    <string name="learn_more_about_dialysis">Aprende más sobre la diálisis</string>
+    <string name="learn_more_about_kidney_biopsy">Aprende más sobre la biopsia renal</string>
+    <string name="learn_more_about_urinalysis">Aprende más sobre el análisis de orina</string>
+    <string name="learn_more_about_blood_test">Aprende más sobre los análisis de sangre</string>
+
+    <!-- Detailed Postinfectious GN Information -->
+    <string name="postinfectious_gn_detailed_title">Glomerulonefritis Postinfecciosa - Información Completa</string>
+    <string name="postinfectious_gn_pathophysiology">Fisiopatología Detallada:</string>
+    <string name="postinfectious_gn_path1">• Infección por estreptococo (1-3 semanas antes)</string>
+    <string name="postinfectious_gn_path2">• Producción de anticuerpos contra antígenos estreptocócicos</string>
+    <string name="postinfectious_gn_path3">• Formación de complejos inmunes circulantes</string>
+    <string name="postinfectious_gn_path4">• Depósito de complejos en glomérulos</string>
+    <string name="postinfectious_gn_path5">• Activación del complemento (C3, C4)</string>
+    <string name="postinfectious_gn_path6">• Liberación de mediadores inflamatorios</string>
+    <string name="postinfectious_gn_path7">• Proliferación de células mesangiales y endoteliales</string>
+    <string name="postinfectious_gn_path8">• Reducción de la superficie de filtración glomerular</string>
+
+    <string name="postinfectious_gn_epidemiology">Epidemiología:</string>
+    <string name="postinfectious_gn_epi1">• Incidencia: 2-3 casos por 100,000 habitantes/año</string>
+    <string name="postinfectious_gn_epi2">• Más común en niños (6-10 años)</string>
+    <string name="postinfectious_gn_epi3">• Predominio masculino 2:1</string>
+    <string name="postinfectious_gn_epi4">• Mayor incidencia en climas fríos</string>
+    <string name="postinfectious_gn_epi5">• Picos estacionales (invierno y primavera)</string>
+    <string name="postinfectious_gn_epi6">• Disminución con el uso de antibióticos</string>
+
+    <string name="postinfectious_gn_symptoms_detailed">Síntomas Detallados:</string>
+    <string name="postinfectious_gn_symptom1">• Orina oscura, color té o con sangre (hematuria macroscópica)</string>
+    <string name="postinfectious_gn_symptom2">• Hinchazón periorbital y en extremidades (edema)</string>
+    <string name="postinfectious_gn_symptom3">• Presión arterial elevada (hipertensión)</string>
+    <string name="postinfectious_gn_symptom4">• Disminución del volumen urinario (oliguria)</string>
+    <string name="postinfectious_gn_symptom5">• Dolor lumbar o en flancos</string>
+    <string name="postinfectious_gn_symptom6">• Fatiga y malestar general</string>
+    <string name="postinfectious_gn_symptom7">• Cefalea por hipertensión</string>
+    <string name="postinfectious_gn_symptom8">• Náuseas y vómitos</string>
+    <string name="postinfectious_gn_symptom9">• Fiebre baja o ausente</string>
+    <string name="postinfectious_gn_symptom10">• Anorexia y pérdida de peso</string>
+
+    <string name="postinfectious_gn_laboratory">Hallazgos de Laboratorio:</string>
+    <string name="postinfectious_gn_lab1">• Hematuria: glóbulos rojos dismórficos y cilindros hemáticos</string>
+    <string name="postinfectious_gn_lab2">• Proteinuria: generalmente &lt;3g/día (no nefrótico)</string>
+    <string name="postinfectious_gn_lab3">• Cilindros eritrocitarios y leucocitarios</string>
+    <string name="postinfectious_gn_lab4">• Creatinina sérica elevada (disfunción renal)</string>
+    <string name="postinfectious_gn_lab5">• BUN elevado (azotemia)</string>
+    <string name="postinfectious_gn_lab6">• Complemento C3 disminuido (90% de casos)</string>
+    <string name="postinfectious_gn_lab7">• ASO (antiestreptolisina O) elevado</string>
+    <string name="postinfectious_gn_lab8">• Anti-DNasa B elevado</string>
+    <string name="postinfectious_gn_lab9">• Hipocomplementemia transitoria (6-8 semanas)</string>
+    <string name="postinfectious_gn_lab10">• Anemia leve normocítica normocrómica</string>
+
+    <string name="postinfectious_gn_histology">Hallazgos Histológicos:</string>
+    <string name="postinfectious_gn_hist1">• Proliferación difusa de células mesangiales y endoteliales</string>
+    <string name="postinfectious_gn_hist2">• Infiltración de leucocitos polimorfonucleares</string>
+    <string name="postinfectious_gn_hist3">• Engrosamiento de la membrana basal glomerular</string>
+    <string name="postinfectious_gn_hist4">• Depósitos subepiteliales en \"joroba de camello\"</string>
+    <string name="postinfectious_gn_hist5">• Depósitos subendoteliales y mesangiales</string>
+    <string name="postinfectious_gn_hist6">• Semilunas en casos severos</string>
+    <string name="postinfectious_gn_hist7">• Inmunofluorescencia: depósitos granulares de C3 e IgG</string>
+
+    <string name="postinfectious_gn_treatment_detailed">Tratamiento Detallado:</string>
+    <string name="postinfectious_gn_treat1">• Reposo en cama durante fase aguda (1-2 semanas)</string>
+    <string name="postinfectious_gn_treat2">• Restricción de sodio (&lt;2g/día) y líquidos</string>
+    <string name="postinfectious_gn_treat3">• Antihipertensivos: IECA/ARA II para protección renal</string>
+    <string name="postinfectious_gn_treat4">• Diuréticos de asa (furosemida) para edema</string>
+    <string name="postinfectious_gn_treat5">• Antibióticos: penicilina benzatínica (si infección activa)</string>
+    <string name="postinfectious_gn_treat6">• Corticosteroides en casos severos con semilunas</string>
+    <string name="postinfectious_gn_treat7">• Diálisis temporal si insuficiencia renal severa</string>
+    <string name="postinfectious_gn_treat8">• Monitorización electrolítica estricta</string>
+
+    <string name="postinfectious_gn_complications">Complicaciones Potenciales:</string>
+    <string name="postinfectious_gn_comp1">• Insuficiencia renal aguda (5-10% casos)</string>
+    <string name="postinfectious_gn_comp2">• Encefalopatía hipertensiva</string>
+    <string name="postinfectious_gn_comp3">• Edema pulmonar agudo</string>
+    <string name="postinfectious_gn_comp4">• Hipercalemia peligrosa</string>
+    <string name="postinfectious_gn_comp5">• Hiponatremia dilucional</string>
+    <string name="postinfectious_gn_comp6">• Acidosis metabólica</string>
+    <string name="postinfectious_gn_comp7">• Anemia severa</string>
+    <string name="postinfectious_gn_comp8">• Convulsiones por uremia</string>
+
+    <string name="postinfectious_gn_prognosis">Pronóstico y Evolución:</string>
+    <string name="postinfectious_gn_prog1">• Niños: recuperación completa en 95% casos</string>
+    <string name="postinfectious_gn_prog2">• Adultos: recuperación en 60-80% casos</string>
+    <string name="postinfectious_gn_prog3">• Mejoría clínica en 1-2 semanas</string>
+    <string name="postinfectious_gn_prog4">• Normalización del complemento en 6-8 semanas</string>
+    <string name="postinfectious_gn_prog5">• Proteinuria residual en 10-20% casos</string>
+    <string name="postinfectious_gn_prog6">• Hipertensión crónica en 5-10% casos</string>
+    <string name="postinfectious_gn_prog7">• ERC terminal en &lt;1% casos</string>
+    <string name="postinfectious_gn_prog8">• Seguimiento mínimo 1-2 años</string>
+
+    <!-- Detailed Nephrotic Syndrome Information -->
+    <string name="nephrotic_syndrome_detailed_title">Síndrome Nefrítico - Información Completa</string>
+    <string name="nephrotic_syndrome_pathophysiology">Fisiopatología del Síndrome Nefrítico:</string>
+    <string name="nephrotic_syndrome_path1">• Inflamación glomerular aguda</string>
+    <string name="nephrotic_syndrome_path2">• Aumento de permeabilidad glomerular</string>
+    <string name="nephrotic_syndrome_path3">• Pérdida selectiva de proteínas (&lt;3.5g/día)</string>
+    <string name="nephrotic_syndrome_path4">• Retención de sodio y agua</string>
+    <string name="nephrotic_syndrome_path5">• Activación del sistema renina-angiotensina</string>
+    <string name="nephrotic_syndrome_path6">• Hipertensión secundaria</string>
+    <string name="nephrotic_syndrome_path7">• Edema leve a moderado</string>
+    <string name="nephrotic_syndrome_path8">• Sedimento urinario activo</string>
+
+    <string name="nephrotic_syndrome_classification">Clasificación del Síndrome Nefrítico:</string>
+    <string name="nephrotic_syndrome_class1">• Primario: origen glomerular intrínseco</string>
+    <string name="nephrotic_syndrome_class2">• Secundario: enfermedades sistémicas</string>
+    <string name="nephrotic_syndrome_class3">• Postinfeccioso: después de infecciones</string>
+    <string name="nephrotic_syndrome_class4">• Autoinmune: lupus, vasculitis</string>
+    <string name="nephrotic_syndrome_class5">• Hereditario: enfermedades genéticas</string>
+    <string name="nephrotic_syndrome_class6">• Idiopático: causa desconocida</string>
+
+    <string name="nephrotic_syndrome_detailed_symptoms">Síntomas Detallados:</string>
+    <string name="nephrotic_syndrome_symptom1">• Hematuria macroscópica (orina rojiza)</string>
+    <string name="nephrotic_syndrome_symptom2">• Proteinuria no nefrótica (&lt;3.5g/día)</string>
+    <string name="nephrotic_syndrome_symptom3">• Hipertensión arterial (frecuente)</string>
+    <string name="nephrotic_syndrome_symptom4">• Edema leve (periorbital, tobillos)</string>
+    <string name="nephrotic_syndrome_symptom5">• Oliguria (disminución de orina)</string>
+    <string name="nephrotic_syndrome_symptom6">• Sedimento urinario activo</string>
+    <string name="nephrotic_syndrome_symptom7">• Cilindros hemáticos y leucocitarios</string>
+    <string name="nephrotic_syndrome_symptom8">• Fatiga y debilidad</string>
+
+    <string name="nephrotic_syndrome_laboratory_detailed">Laboratorio Detallado:</string>
+    <string name="nephrotic_syndrome_lab1">• Proteinuria: 0.5-3.5g/día</string>
+    <string name="nephrotic_syndrome_lab2">• Albúmina sérica normal o ligeramente baja</string>
+    <string name="nephrotic_syndrome_lab3">• Hematuria con glóbulos rojos dismórficos</string>
+    <string name="nephrotic_syndrome_lab4">• Cilindros hemáticos característicos</string>
+    <string name="nephrotic_syndrome_lab5">• Creatinina elevada (disfunción renal)</string>
+    <string name="nephrotic_syndrome_lab6">• Complemento C3 disminuido (postinfeccioso)</string>
+    <string name="nephrotic_syndrome_lab7">• ASO elevado (postestreptocócico)</string>
+    <string name="nephrotic_syndrome_lab8">• Lipidemia normal o ligeramente elevada</string>
+
+    <string name="nephrotic_syndrome_differential">Diagnóstico Diferencial:</string>
+    <string name="nephrotic_syndrome_diff1">• Síndrome nefrótico (proteinuria &gt;3.5g/día)</string>
+    <string name="nephrotic_syndrome_diff2">• Nefropatía por IgA</string>
+    <string name="nephrotic_syndrome_diff3">• Lupus eritematoso sistémico</string>
+    <string name="nephrotic_syndrome_diff4">• Púrpura de Henoch-Schönlein</string>
+    <string name="nephrotic_syndrome_diff5">• Vasculitis ANCA positiva</string>
+    <string name="nephrotic_syndrome_diff6">• Enfermedad membranoproliferativa</string>
+
+    <string name="nephrotic_syndrome_treatment_detailed">Tratamiento Detallado:</string>
+    <string name="nephrotic_syndrome_treat1">• Tratamiento de la causa subyacente</string>
+    <string name="nephrotic_syndrome_treat2">• Reposo durante fase aguda</string>
+    <string name="nephrotic_syndrome_treat3">• Restricción de sodio y líquidos</string>
+    <string name="nephrotic_syndrome_treat4">• Antihipertensivos (IECA/ARA II)</string>
+    <string name="nephrotic_syndrome_treat5">• Diuréticos para edema</string>
+    <string name="nephrotic_syndrome_treat6">• Corticosteroides (en casos autoinmunes)</string>
+    <string name="nephrotic_syndrome_treat7">• Inmunosupresores (casos severos)</string>
+    <string name="nephrotic_syndrome_treat8">• Diálisis (si insuficiencia renal)</string>
+
+    <string name="nephrotic_syndrome_prognosis_detailed">Pronóstico Detallado:</string>
+    <string name="nephrotic_syndrome_prog1">• Excelente en niños postinfecciosos (95%)</string>
+    <string name="nephrotic_syndrome_prog2">• Variable en adultos (60-80%)</string>
+    <string name="nephrotic_syndrome_prog3">• Depende de la causa subyacente</string>
+    <string name="nephrotic_syndrome_prog4">• Riesgo de ERC si no se trata</string>
+    <string name="nephrotic_syndrome_prog5">• Seguimiento a largo plazo necesario</string>
+    <string name="nephrotic_syndrome_prog6">• Monitorización de función renal</string>
+    <string name="nephrotic_syndrome_prog7">• Control de factores de riesgo</string>
+    <string name="nephrotic_syndrome_prog8">• Educación del paciente fundamental</string>
+
+    <!-- Strings adicionales para layouts responsive -->
+    <string name="close">Cerrar</string>
+    <string name="next">Siguiente</string>
+    <string name="submit_survey">Enviar Encuesta</string>
+
+</resources>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/varden"
+    android:fillViewport="true"
+    tools:context=".HabitsTrackingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/habits_title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_marble"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tarjeta de registro de hábitos -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/crimson_blaze">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Consumo de Agua -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/waterInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/blue_marble"
+                    app:boxStrokeWidth="2dp"
+                    app:hintTextColor="@color/cosmos_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/waterEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/water_intake"
+                        android:inputType="number"
+                        android:textColor="@color/cosmos_blue"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Consumo de Sal -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/saltInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/blue_marble"
+                    app:boxStrokeWidth="2dp"
+                    app:hintTextColor="@color/cosmos_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/saltEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/salt_intake"
+                        android:inputType="number"
+                        android:textColor="@color/cosmos_blue"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Presión Arterial -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/systolicInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxStrokeColor="@color/blue_marble"
+                        app:boxStrokeWidth="2dp"
+                        app:hintTextColor="@color/cosmos_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/systolicEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Sistólica"
+                            android:inputType="number"
+                            android:textColor="@color/cosmos_blue"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/diastolicInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxStrokeColor="@color/blue_marble"
+                        app:boxStrokeWidth="2dp"
+                        app:hintTextColor="@color/cosmos_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/diastolicEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Diastólica"
+                            android:inputType="number"
+                            android:textColor="@color/cosmos_blue"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- Peso Corporal -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/weightInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/blue_marble"
+                    app:boxStrokeWidth="2dp"
+                    app:hintTextColor="@color/cosmos_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/weightEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/weight"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/cosmos_blue"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Frecuencia Urinaria -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/urinationInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/blue_marble"
+                    app:boxStrokeWidth="2dp"
+                    app:hintTextColor="@color/cosmos_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/urinationEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/urination_frequency"
+                        android:inputType="number"
+                        android:textColor="@color/cosmos_blue"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Nivel de Hinchazón -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/swelling_level"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <RadioGroup
+                    android:id="@+id/swellingRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <RadioButton
+                        android:id="@+id/noSwellingRadio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ninguno"
+                        android:textColor="@color/white"
+                        android:buttonTint="@color/blue_marble" />
+
+                    <RadioButton
+                        android:id="@+id/mildSwellingRadio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Leve"
+                        android:textColor="@color/white"
+                        android:buttonTint="@color/blue_marble" />
+
+                    <RadioButton
+                        android:id="@+id/moderateSwellingRadio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Moderado"
+                        android:textColor="@color/white"
+                        android:buttonTint="@color/blue_marble" />
+
+                    <RadioButton
+                        android:id="@+id/severeSwellingRadio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Severo"
+                        android:textColor="@color/white"
+                        android:buttonTint="@color/blue_marble" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botones de acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="@string/save_record"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@color/gochujang_red" />
+
+            <Button
+                android:id="@+id/historyButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="@string/view_history"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@color/blue_marble" />
+
+        </LinearLayout>
+
+        <!-- Botón volver -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:text="Volver"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/crimson_blaze" />
+
+    </LinearLayout>
+
+</ScrollView>

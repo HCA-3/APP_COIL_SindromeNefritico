@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales para fondos -->
+    <color name="gochujang_red">#780000</color>
+    <color name="crimson_blaze">#C1121F</color>
+    <color name="varden">#AE1F23</color>
+
+    <!-- Colores secundarios para texto -->
+    <color name="cosmos_blue">#003049</color>
+    <color name="blue_marble">#669BBC</color>
+
+    <!-- Colores adicionales -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Gradientes combinados -->
+    <color name="primary_gradient_start">#780000</color>
+    <color name="primary_gradient_end">#AE1F23</color>
+
+    <!-- Colores adicionales para UI -->
+    <color name="light_gray">#F5F5F5</color>
+    <color name="primary_background">#F8F9FA</color>
+    <color name="primary_text">#212529</color>
+    <color name="primary_color">#C1121F</color>
+    <color name="warning_color">#FF6B35</color>
+</resources>

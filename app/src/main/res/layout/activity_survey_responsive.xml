@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/varden"
+    tools:context=".SurveyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding">
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/titleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/survey_title"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="@dimen/section_spacing"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Introducción -->
+            <TextView
+                android:id="@+id/introTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/survey_intro"
+                    android:textSize="@dimen/card_text_size"
+                    android:textColor="@color/blue_marble"
+                    android:layout_marginBottom="@dimen/item_spacing"
+                    app:layout_constraintTop_toBottomOf="@id/titleTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Tarjeta de preguntas -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/questionsCard"
+                android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/card_margin"
+                    app:cardCornerRadius="@dimen/card_corner_radius"
+                    app:cardElevation="@dimen/card_elevation"
+                    app:cardBackgroundColor="@color/crimson_blaze"
+                    app:layout_constraintTop_toBottomOf="@id/introTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/default_padding">
+
+                        <!-- Pregunta 1 -->
+                        <TextView
+                            android:id="@+id/question1TextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question1"
+                                android:textSize="@dimen/card_text_size"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="@dimen/text_spacing" />
+
+                        <RadioGroup
+                            android:id="@+id/question1RadioGroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/item_spacing"
+                                android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/yes1RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                            <RadioButton
+                                android:id="@+id/no1RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                            <RadioButton
+                                android:id="@+id/sometimes1RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/sometimes"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                        </RadioGroup>
+
+                        <!-- Pregunta 2 -->
+                        <TextView
+                            android:id="@+id/question2TextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question2"
+                                android:textSize="@dimen/card_text_size"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="@dimen/text_spacing" />
+
+                        <RadioGroup
+                            android:id="@+id/question2RadioGroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/item_spacing"
+                                android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/yes2RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                            <RadioButton
+                                android:id="@+id/no2RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                            <RadioButton
+                                android:id="@+id/sometimes2RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/sometimes"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                        </RadioGroup>
+
+                        <!-- Pregunta 3 -->
+                        <TextView
+                            android:id="@+id/question3TextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question3"
+                                android:textSize="@dimen/card_text_size"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="@dimen/text_spacing" />
+
+                        <RadioGroup
+                            android:id="@+id/question3RadioGroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/item_spacing"
+                                android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/yes3RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                            <RadioButton
+                                android:id="@+id/no3RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                            <RadioButton
+                                android:id="@+id/sometimes3RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/sometimes"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                        </RadioGroup>
+
+                        <!-- Pregunta 4 -->
+                        <TextView
+                            android:id="@+id/question4TextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question4"
+                                android:textSize="@dimen/card_text_size"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="@dimen/text_spacing" />
+
+                        <RadioGroup
+                            android:id="@+id/question4RadioGroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/item_spacing"
+                                android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/yes4RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                            <RadioButton
+                                android:id="@+id/no4RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                            <RadioButton
+                                android:id="@+id/sometimes4RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/sometimes"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                        </RadioGroup>
+
+                        <!-- Pregunta 5 -->
+                        <TextView
+                            android:id="@+id/question5TextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question5"
+                                android:textSize="@dimen/card_text_size"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="@dimen/text_spacing" />
+
+                        <RadioGroup
+                            android:id="@+id/question5RadioGroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/item_spacing"
+                                android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/yes5RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                            <RadioButton
+                                android:id="@+id/no5RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                            <RadioButton
+                                android:id="@+id/sometimes5RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/sometimes"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                        </RadioGroup>
+
+                        <!-- Pregunta 6 -->
+                        <TextView
+                            android:id="@+id/question6TextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question6"
+                                android:textSize="@dimen/card_text_size"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="@dimen/item_spacing" />
+
+                        <RadioGroup
+                            android:id="@+id/question6RadioGroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/item_spacing"
+                                android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/yes6RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                            <RadioButton
+                                android:id="@+id/no6RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                            <RadioButton
+                                android:id="@+id/sometimes6RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/sometimes"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textColor="@color/blue_marble" />
+
+                        </RadioGroup>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Botones de acción -->
+            <LinearLayout
+                android:id="@+id/buttonsLayout"
+                android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/item_spacing"
+                    app:layout_constraintTop_toBottomOf="@id/questionsCard"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                <Button
+                    android:id="@+id/backButton"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_weight="1"
+                        android:text="@string/back"
+                        android:textSize="@dimen/button_text_size"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded_background"
+                        android:layout_marginEnd="@dimen/text_spacing" />
+
+                <Button
+                    android:id="@+id/submitSurveyButton"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_weight="1"
+                        android:text="@string/submit_survey"
+                        android:textSize="@dimen/button_text_size"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded_background"
+                        android:layout_marginEnd="@dimen/text_spacing" />
+
+            </LinearLayout>
+
+            <!-- Espaciado final -->
+            <View
+                android:layout_width="0dp"
+                    android:layout_height="@dimen/large_padding"
+                    app:layout_constraintTop_toBottomOf="@id/buttonsLayout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

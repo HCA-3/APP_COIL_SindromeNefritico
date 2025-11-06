@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/varden"
+    tools:context=".MedicalInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding">
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue_marble"
+                android:layout_marginBottom="@dimen/section_spacing"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Descripción -->
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/card_text_size"
+                android:textColor="@color/blue_marble"
+                android:layout_marginBottom="@dimen/item_spacing"
+                app:layout_constraintTop_toBottomOf="@id/titleTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Tarjeta de Síntomas -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/symptomsCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:cardBackgroundColor="@color/crimson_blaze"
+                app:layout_constraintTop_toBottomOf="@id/descriptionTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/default_padding">
+
+                    <!-- Título de síntomas -->
+                    <TextView
+                        android:id="@+id/symptomsTitleTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/card_text_size"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="@dimen/text_spacing" />
+
+                    <!-- Lista de síntomas -->
+                    <TextView
+                        android:id="@+id/symptom1TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/button_text_size"
+                        android:textColor="@color/blue_marble"
+                        android:layout_marginBottom="@dimen/text_spacing" />
+
+                    <TextView
+                        android:id="@+id/symptom2TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/button_text_size"
+                        android:textColor="@color/blue_marble"
+                        android:layout_marginBottom="@dimen/text_spacing" />
+
+                    <TextView
+                        android:id="@+id/symptom3TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/button_text_size"
+                        android:textColor="@color/blue_marble"
+                        android:layout_marginBottom="@dimen/text_spacing" />
+
+                    <TextView
+                        android:id="@+id/symptom4TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/button_text_size"
+                        android:textColor="@color/blue_marble"
+                        android:layout_marginBottom="@dimen/item_spacing" />
+
+                    <!-- Botón de información sobre síntomas -->
+                    <TextView
+                        android:id="@+id/edemaInfoButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/learn_more_about_edema"
+                        android:textSize="@dimen/small_text_size"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded_background"
+                        android:padding="@dimen/small_padding"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/text_spacing" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Botones de acción -->
+            <LinearLayout
+                android:id="@+id/buttonsLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/item_spacing"
+                app:layout_constraintTop_toBottomOf="@id/symptomsCard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="1"
+                    android:text="@string/back"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_background"
+                    android:layout_marginEnd="@dimen/text_spacing" />
+
+                <Button
+                    android:id="@+id/diagnosisButton"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="1"
+                    android:text="@string/next"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_background" />
+
+            </LinearLayout>
+
+            <!-- Espaciado final -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/large_padding"
+                app:layout_constraintTop_toBottomOf="@id/buttonsLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
