@@ -62,9 +62,9 @@ class CreditsActivity : BaseActivity() {
     private fun setupMedicalTeam() {
         // Equipo Médico - 5 personas
         val medicalNames = arrayOf(
-            "Dr. Especialista Renal",
-            "Dra. Nefróloga Clínica",
-            "Dr. Investigador Médico",
+            "Luis Carlos Yáñez Flores",
+            "Ana Paulina Tovar Sandoval",
+            "Brenda Melissa Pérez Hernández",
             "Dra. Pediatra Especializada",
             "Dr. Médico General"
         )
