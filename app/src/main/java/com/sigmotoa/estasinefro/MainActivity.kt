@@ -129,16 +129,32 @@ class MainActivity : BaseActivity() {
         val titleTextView = findViewById<android.widget.TextView>(R.id.textView)
         com.sigmotoa.estasinefro.AnimationUtils.slideDownAnimation(this, titleTextView)
 
-        // Animar los botones de acción
+        // Animar los botones de acción con efecto de rebote
         val changeLanguageBtn = findViewById<Button>(R.id.changeLanguageBtn)
         val viewProfileBtn = findViewById<Button>(R.id.viewProfileBtn)
 
-        com.sigmotoa.estasinefro.AnimationUtils.fadeInAnimation(this, changeLanguageBtn)
-        com.sigmotoa.estasinefro.AnimationUtils.fadeInAnimation(this, viewProfileBtn)
+        // Animación de entrada con rebote para los botones
+        val scaleInAnim = AnimationUtils.loadAnimation(this, R.anim.scale_in)
+        changeLanguageBtn.postDelayed({
+            changeLanguageBtn.startAnimation(scaleInAnim)
+        }, 300)
+
+        viewProfileBtn.postDelayed({
+            viewProfileBtn.startAnimation(scaleInAnim)
+        }, 400)
 
         // Configurar animaciones de presión para botones
         com.sigmotoa.estasinefro.AnimationUtils.setButtonPressAnimation(this, changeLanguageBtn)
         com.sigmotoa.estasinefro.AnimationUtils.setButtonPressAnimation(this, viewProfileBtn)
+
+        // Agregar efecto de pulso sutil a los botones
+        changeLanguageBtn.postDelayed({
+            startButtonPulseAnimation(changeLanguageBtn)
+        }, 800)
+
+        viewProfileBtn.postDelayed({
+            startButtonPulseAnimation(viewProfileBtn)
+        }, 900)
 
         // Configurar animaciones para las tarjetas médicas
         val nephroticCard = findViewById<CardView>(R.id.nephroticCard)
@@ -147,14 +163,32 @@ class MainActivity : BaseActivity() {
         val surveyCard = findViewById<CardView>(R.id.surveyCard)
         val medicalDisclaimerCard = findViewById<CardView>(R.id.medicalDisclaimerCard)
 
-        // Animar entrada de las tarjetas
-        val cards = listOf(nephroticCard, postinfectiousCard, habitsCard, surveyCard, medicalDisclaimerCard)
-        val slideUpAnim = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.slide_up)
+        // Animación de entrada con rebote para las tarjetas
+        val scaleInAnim1 = AnimationUtils.loadAnimation(this, R.anim.scale_in)
+        val scaleInAnim2 = AnimationUtils.loadAnimation(this, R.anim.scale_in)
+        val scaleInAnim3 = AnimationUtils.loadAnimation(this, R.anim.scale_in)
+        val scaleInAnim4 = AnimationUtils.loadAnimation(this, R.anim.scale_in)
+        val scaleInAnim5 = AnimationUtils.loadAnimation(this, R.anim.scale_in)
 
-        cards.forEachIndexed { index, card ->
-            slideUpAnim.startOffset = (index * 100).toLong()
-            card.startAnimation(slideUpAnim)
-        }
+        nephroticCard.postDelayed({
+            nephroticCard.startAnimation(scaleInAnim1)
+        }, 500)
+
+        postinfectiousCard.postDelayed({
+            postinfectiousCard.startAnimation(scaleInAnim2)
+        }, 600)
+
+        habitsCard.postDelayed({
+            habitsCard.startAnimation(scaleInAnim3)
+        }, 700)
+
+        surveyCard.postDelayed({
+            surveyCard.startAnimation(scaleInAnim4)
+        }, 800)
+
+        medicalDisclaimerCard.postDelayed({
+            medicalDisclaimerCard.startAnimation(scaleInAnim5)
+        }, 900)
 
         // Configurar animaciones de presión para tarjetas
         com.sigmotoa.estasinefro.AnimationUtils.setCardPressAnimation(this, nephroticCard)
@@ -162,6 +196,27 @@ class MainActivity : BaseActivity() {
         com.sigmotoa.estasinefro.AnimationUtils.setCardPressAnimation(this, habitsCard)
         com.sigmotoa.estasinefro.AnimationUtils.setCardPressAnimation(this, surveyCard)
         com.sigmotoa.estasinefro.AnimationUtils.setCardPressAnimation(this, medicalDisclaimerCard)
+
+        // Agregar efecto de pulso sutil a las tarjetas
+        nephroticCard.postDelayed({
+            startCardPulseAnimation(nephroticCard)
+        }, 1000)
+
+        postinfectiousCard.postDelayed({
+            startCardPulseAnimation(postinfectiousCard)
+        }, 1100)
+
+        habitsCard.postDelayed({
+            startCardPulseAnimation(habitsCard)
+        }, 1200)
+
+        surveyCard.postDelayed({
+            startCardPulseAnimation(surveyCard)
+        }, 1300)
+
+        medicalDisclaimerCard.postDelayed({
+            startCardPulseAnimation(medicalDisclaimerCard)
+        }, 1400)
     }
 
     private fun applyTransitionAnimation() {
@@ -169,6 +224,42 @@ class MainActivity : BaseActivity() {
             R.anim.transition_slide_in_right,
             R.anim.transition_slide_out_left
         )
+    }
+
+    private fun startButtonPulseAnimation(button: Button) {
+        val scaleUp = android.animation.ObjectAnimator.ofFloat(button, "scaleX", 1.0f, 1.05f)
+        val scaleUpY = android.animation.ObjectAnimator.ofFloat(button, "scaleY", 1.0f, 1.05f)
+        val scaleDown = android.animation.ObjectAnimator.ofFloat(button, "scaleX", 1.05f, 1.0f)
+        val scaleDownY = android.animation.ObjectAnimator.ofFloat(button, "scaleY", 1.05f, 1.0f)
+
+        scaleUp.duration = 1000
+        scaleUpY.duration = 1000
+        scaleDown.duration = 1000
+        scaleDownY.duration = 1000
+
+        scaleUp.repeatCount = android.animation.ObjectAnimator.INFINITE
+        scaleUpY.repeatCount = android.animation.ObjectAnimator.INFINITE
+        scaleUp.repeatMode = android.animation.ObjectAnimator.REVERSE
+        scaleUpY.repeatMode = android.animation.ObjectAnimator.REVERSE
+
+        scaleUp.start()
+        scaleUpY.start()
+    }
+
+    private fun startCardPulseAnimation(card: CardView) {
+        val scaleX = android.animation.ObjectAnimator.ofFloat(card, "scaleX", 1.0f, 1.03f)
+        val scaleY = android.animation.ObjectAnimator.ofFloat(card, "scaleY", 1.0f, 1.03f)
+
+        scaleX.duration = 1500
+        scaleY.duration = 1500
+
+        scaleX.repeatCount = android.animation.ObjectAnimator.INFINITE
+        scaleY.repeatCount = android.animation.ObjectAnimator.INFINITE
+        scaleX.repeatMode = android.animation.ObjectAnimator.REVERSE
+        scaleY.repeatMode = android.animation.ObjectAnimator.REVERSE
+
+        scaleX.start()
+        scaleY.start()
     }
 
     fun changeLanguage(view: android.view.View) {

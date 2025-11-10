@@ -30,6 +30,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
         android:orientation="horizontal"
         android:weightSum="2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +42,7 @@
             android:id="@+id/changeLanguageBtn"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="6dp"
+            android:layout_marginEnd="8dp"
             android:layout_weight="1"
             android:background="@drawable/animated_button_background"
             android:onClick="changeLanguage"
@@ -52,7 +54,7 @@
             android:id="@+id/viewProfileBtn"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginStart="6dp"
+            android:layout_marginStart="8dp"
             android:layout_weight="1"
             android:background="@drawable/animated_button_background"
             android:onClick="viewProfile"
@@ -115,7 +117,9 @@
                         android:text="@string/nephrotic_syndrome"
                         android:textColor="@color/cosmos_blue"
                         android:textSize="17sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:gravity="center" />
 
                 </LinearLayout>
 
@@ -156,7 +160,9 @@
                         android:text="@string/postinfectious_gn"
                         android:textColor="@color/cosmos_blue"
                         android:textSize="17sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:gravity="center" />
 
                 </LinearLayout>
 
@@ -197,7 +203,9 @@
                         android:text="@string/habits_tracking"
                         android:textColor="@color/cosmos_blue"
                         android:textSize="17sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:gravity="center" />
 
                 </LinearLayout>
 
@@ -238,7 +246,9 @@
                         android:text="@string/medical_survey"
                         android:textColor="@color/cosmos_blue"
                         android:textSize="17sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:gravity="center" />
 
                 </LinearLayout>
 
@@ -280,7 +290,9 @@
                         android:text="@string/medical_disclaimer"
                         android:textColor="@color/varden"
                         android:textSize="17sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:gravity="center" />
 
                 </LinearLayout>
 
