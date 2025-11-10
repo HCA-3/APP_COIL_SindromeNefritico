@@ -3,20 +3,20 @@
     android:duration="400"
     android:interpolator="@android:anim/accelerate_interpolator">
 
-    <!-- Salir hacia la izquierda -->
+    <!-- Salir hacia la derecha (al regresar) -->
     <translate
         android:fromXDelta="0%"
-        android:toXDelta="-30%" />
+        android:toXDelta="100%" />
 
     <alpha
         android:fromAlpha="1.0"
-        android:toAlpha="0.3" />
+        android:toAlpha="0.5" />
 
     <scale
         android:fromXScale="1.0"
         android:fromYScale="1.0"
-        android:toXScale="0.9"
-        android:toYScale="0.9"
+        android:toXScale="0.95"
+        android:toYScale="0.95"
         android:pivotX="50%"
         android:pivotY="50%" />
 

@@ -3,18 +3,18 @@
     android:duration="400"
     android:interpolator="@android:anim/decelerate_interpolator">
 
-    <!-- Entrar desde la derecha -->
+    <!-- Entrar desde la izquierda (al regresar) -->
     <translate
-        android:fromXDelta="100%"
+        android:fromXDelta="-30%"
         android:toXDelta="0%" />
 
     <alpha
-        android:fromAlpha="0.5"
+        android:fromAlpha="0.3"
         android:toAlpha="1.0" />
 
     <scale
-        android:fromXScale="0.95"
-        android:fromYScale="0.95"
+        android:fromXScale="0.9"
+        android:fromYScale="0.9"
         android:toXScale="1.0"
         android:toYScale="1.0"
         android:pivotX="50%"

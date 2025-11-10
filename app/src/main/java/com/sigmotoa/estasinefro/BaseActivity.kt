@@ -38,4 +38,32 @@ abstract class BaseActivity : AppCompatActivity() {
         startActivity(intent)
         overridePendingTransition(0, 0)
     }
+
+    /**
+     * Sobrescribe finish() para aplicar animaciones de regreso
+     */
+    override fun finish() {
+        super.finish()
+        applyBackTransitionAnimation()
+    }
+
+    /**
+     * Aplica animaciones de transición al regresar
+     */
+    private fun applyBackTransitionAnimation() {
+        overridePendingTransition(
+            R.anim.transition_slide_in_left,
+            R.anim.transition_slide_out_right
+        )
+    }
+
+    /**
+     * Aplica animaciones de transición al avanzar
+     */
+    protected fun applyForwardTransitionAnimation() {
+        overridePendingTransition(
+            R.anim.transition_slide_in_right,
+            R.anim.transition_slide_out_left
+        )
+    }
 }
