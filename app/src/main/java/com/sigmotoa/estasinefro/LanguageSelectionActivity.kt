@@ -104,8 +104,15 @@ class LanguageSelectionActivity : BaseActivity() {
 
         Toast.makeText(this, "Idioma seleccionado: $languageName", Toast.LENGTH_SHORT).show()
 
-        // Navigate to user profile activity
-        val intent = Intent(this, UserProfileActivity::class.java)
+        // Navigate based on profile completion status
+        val intent = if (UserProfileActivity.isProfileCompleted(this)) {
+            // If profile is already completed, go back to MainActivity
+            Intent(this, MainActivity::class.java)
+        } else {
+            // If profile is not completed, go to UserProfileActivity
+            Intent(this, UserProfileActivity::class.java)
+        }
+
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intent)
         finish()
