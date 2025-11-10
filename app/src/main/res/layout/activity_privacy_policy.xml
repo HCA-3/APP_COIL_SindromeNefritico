@@ -197,7 +197,7 @@
             android:text="@string/privacy_accept_checkbox"
             android:textSize="14sp"
             android:textColor="@color/blue_marble"
-            android:buttonTint="@color/crimson_blaze"
+            android:buttonTint="@color/cosmos_blue"
             android:layout_marginBottom="16dp" />
 
         <!-- Botón Continuar -->

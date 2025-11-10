@@ -63,7 +63,7 @@ class LanguageSelectionActivity : BaseActivity() {
     }
 
     private fun highlightSelectedCard(card: CardView) {
-        card.setCardBackgroundColor(ContextCompat.getColor(this, R.color.gochujang_red))
+        card.setCardBackgroundColor(ContextCompat.getColor(this, R.color.cosmos_blue))
     }
 
     private fun animateSelection(card: CardView) {

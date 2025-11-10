@@ -14,11 +14,11 @@
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/large_padding"
+        android:layout_marginTop="16dp"
         android:text="@string/welcome_message"
         android:textAlignment="center"
         android:textColor="@color/cosmos_blue"
-        android:textSize="@dimen/title_text_size"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
         android:id="@+id/actionButtonsLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/section_spacing"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         android:weightSum="2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,26 +39,26 @@
         <Button
             android:id="@+id/changeLanguageBtn"
             android:layout_width="0dp"
-            android:layout_height="@dimen/button_height"
-            android:layout_marginEnd="@dimen/small_padding"
+            android:layout_height="48dp"
+            android:layout_marginEnd="6dp"
             android:layout_weight="1"
             android:background="@drawable/animated_button_background"
             android:onClick="changeLanguage"
             android:text="@string/change_language"
             android:textColor="@color/white"
-            android:textSize="@dimen/button_text_size" />
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/viewProfileBtn"
             android:layout_width="0dp"
-            android:layout_height="@dimen/button_height"
-            android:layout_marginStart="@dimen/small_padding"
+            android:layout_height="48dp"
+            android:layout_marginStart="6dp"
             android:layout_weight="1"
             android:background="@drawable/animated_button_background"
             android:onClick="viewProfile"
             android:text="@string/view_profile"
             android:textColor="@color/white"
-            android:textSize="@dimen/button_text_size" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -67,7 +67,7 @@
         android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="@dimen/section_spacing"
+        android:layout_marginTop="20dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,32 +78,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="@dimen/large_padding">
+            android:paddingBottom="16dp">
 
             <!-- Nephrotic Syndrome Card -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/nephroticCard"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/card_height"
-                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_height="80dp"
+                android:layout_marginBottom="12dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:background="@drawable/animated_card_background"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_elevation">
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center"
+                    android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="@dimen/default_padding">
+                    android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="@dimen/icon_size"
-                        android:layout_height="@dimen/icon_size"
-                        android:layout_marginEnd="@dimen/default_padding"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginEnd="16dp"
                         android:contentDescription="@string/nephrotic_syndrome"
                         android:src="@drawable/ic_medical_info"
                         app:tint="@color/crimson_blaze" />
@@ -114,7 +114,7 @@
                         android:layout_weight="1"
                         android:text="@string/nephrotic_syndrome"
                         android:textColor="@color/cosmos_blue"
-                        android:textSize="@dimen/card_text_size"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -125,26 +125,26 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/postinfectiousCard"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/card_height"
-                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_height="80dp"
+                android:layout_marginBottom="12dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:background="@drawable/animated_card_background"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_elevation">
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center"
+                    android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="@dimen/default_padding">
+                    android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="@dimen/icon_size"
-                        android:layout_height="@dimen/icon_size"
-                        android:layout_marginEnd="@dimen/default_padding"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginEnd="16dp"
                         android:contentDescription="@string/postinfectious_gn"
                         android:src="@drawable/ic_medical_info"
                         app:tint="@color/crimson_blaze" />
@@ -155,7 +155,7 @@
                         android:layout_weight="1"
                         android:text="@string/postinfectious_gn"
                         android:textColor="@color/cosmos_blue"
-                        android:textSize="@dimen/card_text_size"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -166,26 +166,26 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/habitsCard"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/card_height"
-                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_height="80dp"
+                android:layout_marginBottom="12dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:background="@drawable/animated_card_background"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_elevation">
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center"
+                    android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="@dimen/default_padding">
+                    android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="@dimen/icon_size"
-                        android:layout_height="@dimen/icon_size"
-                        android:layout_marginEnd="@dimen/default_padding"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginEnd="16dp"
                         android:contentDescription="@string/habits_tracking"
                         android:src="@drawable/ic_habits"
                         app:tint="@color/crimson_blaze" />
@@ -196,7 +196,7 @@
                         android:layout_weight="1"
                         android:text="@string/habits_tracking"
                         android:textColor="@color/cosmos_blue"
-                        android:textSize="@dimen/card_text_size"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -207,26 +207,26 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/surveyCard"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/card_height"
-                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_height="80dp"
+                android:layout_marginBottom="12dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:background="@drawable/animated_card_background"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_elevation">
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center"
+                    android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="@dimen/default_padding">
+                    android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="@dimen/icon_size"
-                        android:layout_height="@dimen/icon_size"
-                        android:layout_marginEnd="@dimen/default_padding"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginEnd="16dp"
                         android:contentDescription="@string/medical_survey"
                         android:src="@drawable/ic_survey"
                         app:tint="@color/crimson_blaze" />
@@ -237,7 +237,7 @@
                         android:layout_weight="1"
                         android:text="@string/medical_survey"
                         android:textColor="@color/cosmos_blue"
-                        android:textSize="@dimen/card_text_size"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -249,25 +249,26 @@
                 android:id="@+id/medicalDisclaimerCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginBottom="12dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:background="@drawable/animated_card_background"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_elevation">
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                    android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="@dimen/default_padding">
+                    android:padding="16dp"
+                    android:minHeight="70dp">
 
                     <ImageView
-                        android:layout_width="@dimen/icon_size"
-                        android:layout_height="@dimen/icon_size"
-                        android:layout_marginEnd="@dimen/default_padding"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginEnd="16dp"
                         android:contentDescription="@string/medical_disclaimer"
                         android:src="@android:drawable/ic_dialog_alert"
                         app:tint="@color/varden" />
@@ -278,7 +279,7 @@
                         android:layout_weight="1"
                         android:text="@string/medical_disclaimer"
                         android:textColor="@color/varden"
-                        android:textSize="@dimen/card_text_size"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>

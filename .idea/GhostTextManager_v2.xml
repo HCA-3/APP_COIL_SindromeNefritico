@@ -39,6 +39,18 @@
             </GhostTextMetaData>
           </value>
         </entry>
+        <entry key="centra eñ texto de español y ingles en la parte de idioma">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762812968863" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
         <entry key="como agrego las imagenes">
           <value>
             <GhostTextMetaData>
@@ -137,6 +149,18 @@
             </GhostTextMetaData>
           </value>
         </entry>
+        <entry key="cuando se seleciona el idioma puedes hacer que cuando se selecione ya sea español o ingles se cambie de color a azul para diferenciar cual es la selccion">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762812515015" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
         <entry key="dame los comandos para copiar este proyecto en un repo nuevo">
           <value>
             <GhostTextMetaData>
@@ -156,6 +180,18 @@
               <option name="timestamps">
                 <list>
                   <option value="1762221371596" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="en la parte de politicas de privacidad y terminos de uso en la parte que se debe selecionar: he leido y acpto las politicas en vez de que se selecione rojo puedes colocarle un chulito azul">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762812382884" />
                 </list>
               </option>
             </GhostTextMetaData>
@@ -192,6 +228,18 @@
               <option name="timestamps">
                 <list>
                   <option value="1762807194916" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="mira que le doy a cambiar idioma o cuando inicio la aplicaicon y el idioma no queda selecionado ni se pone en azul cuando seleciono el idioma y el fondo de la letra de continuar de idioma cambialo a azul tambien">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762812810165" />
                 </list>
               </option>
             </GhostTextMetaData>
@@ -252,6 +300,18 @@
               <option name="timestamps">
                 <list>
                   <option value="1762276239147" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="puedes acomodar la distribucion de los espacios de la pantalla princupal de la aplicaicon ajusta los recuadros o la distribucion">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762811701976" />
                 </list>
               </option>
             </GhostTextMetaData>
