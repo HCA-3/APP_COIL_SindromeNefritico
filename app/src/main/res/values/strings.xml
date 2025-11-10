@@ -489,4 +489,37 @@
     <string name="next">Siguiente</string>
     <string name="submit_survey">Enviar Encuesta</string>
 
+    <!-- Privacy Policy Strings -->
+    <string name="privacy_policy_title">Política de Privacidad y Términos de Uso</string>
+    <string name="privacy_accept_checkbox">He leído y acepto la Política de Privacidad y Términos de Uso</string>
+    <string name="privacy_continue_button">Continuar</string>
+
+    <!-- Privacy Policy Section 1: Finalidad -->
+    <string name="privacy_section_1_title">1. Finalidad de la aplicación</string>
+    <string name="privacy_section_1_content">Esta aplicación ha sido desarrollada en el marco de un proyecto colaborativo entre estudiantes de Ingeniería y Medicina, bajo la orientación de docentes y expertos en las áreas médica, lingüística y tecnológica.\n\nSu objetivo es divulgar información educativa y científica sobre enfermedades renales —como el síndrome nefrítico y la glomerulonefritis postinfecciosa— en un lenguaje accesible para la comunidad.</string>
+
+    <!-- Privacy Policy Section 2: Descargo médico -->
+    <string name="privacy_section_2_title">2. Descargo de responsabilidad médica</string>
+    <string name="privacy_section_2_content">El contenido disponible tiene fines exclusivamente informativos y educativos.\n\nNo sustituye en ningún caso la valoración, diagnóstico ni tratamiento médico profesional.\n\nAnte cualquier síntoma o duda sobre su salud, consulte siempre a su médico o profesional de la salud.\n\nLa aplicación no promueve la automedicación ni ofrece servicios de telemedicina.</string>
+
+    <!-- Privacy Policy Section 3: Datos personales -->
+    <string name="privacy_section_3_title">3. Tratamiento de datos personales</string>
+    <string name="privacy_section_3_content">En caso de que el usuario suministre información personal (por ejemplo, correo electrónico, nombre o edad), esta será tratada conforme a la legislación vigente en materia de protección de datos:\n\n• En Colombia, la Ley 1581 de 2012, el Decreto 1377 de 2013 y demás normas complementarias.\n\n• En México y Estados Unidos, conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (MEX) y la Health Insurance Portability and Accountability Act – HIPAA (USA).\n\nLos datos serán utilizados únicamente con fines académicos, estadísticos o de mejora del contenido, garantizando confidencialidad, integridad y seguridad.\n\nEn ningún caso serán compartidos con terceros sin autorización expresa del titular.</string>
+
+    <!-- Privacy Policy Section 4: Uso educativo -->
+    <string name="privacy_section_4_title">4. Uso educativo y no comercial</string>
+    <string name="privacy_section_4_content">La aplicación se distribuye gratuitamente y tiene un propósito académico-educativo.\n\nCualquier uso comercial, reproducción o redistribución del contenido requiere autorización previa por escrito de los autores o instituciones participantes.</string>
+
+    <!-- Privacy Policy Section 5: Principios éticos -->
+    <string name="privacy_section_5_title">5. Principios éticos y de equidad</string>
+    <string name="privacy_section_5_content">El proyecto rechaza toda forma de discriminación por razones de género, raza, nacionalidad, orientación sexual, religión o condición socioeconómica.\n\nPromueve la equidad, la diversidad y el acceso universal a la información en salud.</string>
+
+    <!-- Privacy Policy Section 6: Colaboradores -->
+    <string name="privacy_section_6_title">6. Colaboradores</string>
+    <string name="privacy_section_6_content">El desarrollo de esta aplicación ha sido realizado por equipos académicos integrados por estudiantes de:\n\n• Tecnológico de Monterrey (México)\n\n• University of Florida (Estados Unidos)\n\n• Universidad Católica de Colombia (Colombia)\n\nBajo la supervisión de profesores e investigadores de las áreas médica e ingenieril.</string>
+
+    <!-- Privacy Policy Section 7: Aceptación -->
+    <string name="privacy_section_7_title">7. Aceptación de términos</string>
+    <string name="privacy_section_7_content">Al utilizar esta aplicación, el usuario reconoce y acepta los términos de uso y políticas aquí descritos.\n\nEl incumplimiento o uso indebido del contenido podrá implicar la restricción de acceso o las acciones legales que correspondan según la legislación aplicable.</string>
+
 </resources>
