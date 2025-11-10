@@ -78,9 +78,10 @@
         <entry key="continua donde te quedaste">
           <value>
             <GhostTextMetaData>
-              <option name="count" value="2.0" />
+              <option name="count" value="3.0" />
               <option name="timestamps">
                 <list>
+                  <option value="1762450536530" />
                   <option value="1762403691883" />
                   <option value="1762304739522" />
                 </list>
@@ -131,6 +132,18 @@
               <option name="timestamps">
                 <list>
                   <option value="1762315175658" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="dame los comandos para copiar este proyecto en un repo nuevo">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762450248343" />
                 </list>
               </option>
             </GhostTextMetaData>
@@ -395,6 +408,20 @@
               <option name="timestamps">
                 <list>
                   <option value="1762275434334" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="quiero que me cambies el enlace del repo actual a este: https://github.com/HCA-3/APP_COIL_SindromeNefritico.git">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="3.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762450327428" />
+                  <option value="1762450310185" />
+                  <option value="1762450308572" />
                 </list>
               </option>
             </GhostTextMetaData>
