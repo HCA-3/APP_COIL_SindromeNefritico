@@ -39,6 +39,18 @@
             </GhostTextMetaData>
           </value>
         </entry>
+        <entry key="ayudame a corregir un error, cuando quiero cambiar el idioma desde la pantalla prinzipal de la aplicaicon me vuelve a pedir que me registe, eso no puede ser eso solo es para cambiar el idioma de la aplicacion nada mas, ayudame a corregir eso">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762813144982" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
         <entry key="centra eñ texto de español y ingles en la parte de idioma">
           <value>
             <GhostTextMetaData>
@@ -46,6 +58,18 @@
               <option name="timestamps">
                 <list>
                   <option value="1762812968863" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="centra los textos de la pantalla principal">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762813825206" />
                 </list>
               </option>
             </GhostTextMetaData>
@@ -185,6 +209,18 @@
             </GhostTextMetaData>
           </value>
         </entry>
+        <entry key="en la pantalla principal puedes hacer los botones con animaciones">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762813371013" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
         <entry key="en la parte de politicas de privacidad y terminos de uso en la parte que se debe selecionar: he leido y acpto las politicas en vez de que se selecione rojo puedes colocarle un chulito azul">
           <value>
             <GhostTextMetaData>
@@ -317,6 +353,18 @@
             </GhostTextMetaData>
           </value>
         </entry>
+        <entry key="puedes hcaer interectivo tambien los botones restantes de la pantalla principal">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762813530920" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
         <entry key="que hace el avido medico importante, porque solo esta el aviso en la pantalla de inicio y ni hace nada?">
           <value>
             <GhostTextMetaData>
@@ -413,6 +461,18 @@
             </GhostTextMetaData>
           </value>
         </entry>
+        <entry key="quiero que ajustes los espacios entre los botones para que abarquen toda la pantalla de la pantalla principal">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762814004133" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
         <entry key="quiero que al abrir la aplicacion aparezca  algo asi como muestra la imagen dejar que el usuario seleccione el idioma de la aplicacion">
           <value>
             <GhostTextMetaData>
@@ -480,6 +540,18 @@
               <option name="timestamps">
                 <list>
                   <option value="1762278751000" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="quiero que le pongas animacion a pasar entre que se sindrome nefritico, glomerulonefritis en los giquientes y asi animacion de todo">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762814333443" />
                 </list>
               </option>
             </GhostTextMetaData>
@@ -554,6 +626,18 @@
               <option name="timestamps">
                 <list>
                   <option value="1762276573955" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="qyudame a corregir unas cosas de la encuesta medica, cuando de escoge uno de las opciones desaparece el circulo, quiero que solo se larque en azul lo seleccionado">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762815267505" />
                 </list>
               </option>
             </GhostTextMetaData>
